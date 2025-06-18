@@ -1,0 +1,60 @@
+CIS Section: 1.1.2.2.1 – Ensure /dev/shm is a separate partition
+
+Current State:
+/dev/shm tmpfs  tmpfs  rw,nosuid,nodev,inode64
+
+Hardened State:
+/dev/shm should be a separate mount using tmpfs
+
+Audit Result: **PASS**
+
+Rationale:
+Making /dev/shm its own file system allows administrators to apply restrictions like noexec to mitigate risk.
+
+---
+
+CIS Section: 1.1.2.2.2 – Ensure nodev option set on /dev/shm partition
+
+Current State:
+/dev/shm tmpfs  tmpfs  rw,nosuid,nodev,inode64
+
+Hardened State:
+/dev/shm should be mounted with nodev enabled
+
+Audit Result: **PASS**
+
+Rationale:
+This option prevents creation of special device files in /dev/shm.
+
+---
+
+CIS Section: 1.1.2.2.3 – Ensure nosuid option set on /dev/shm partition
+
+Current State:
+/dev/shm tmpfs  tmpfs  rw,nosuid,nodev,inode64
+
+Hardened State:
+/dev/shm should be mounted with nosuid enabled
+
+Audit Result: **PASS**
+
+Rationale:
+Prevents execution of setuid programs from shared memory.
+
+---
+
+CIS Section: 1.1.2.2.4 – Ensure noexec option set on /dev/shm partition
+
+Current State:
+/dev/shm tmpfs  tmpfs  rw,nosuid,nodev,inode64
+
+Hardened State:
+/dev/shm should be mounted with noexec enabled
+
+Audit Result: **FAIL**
+
+Rationale:
+Prevents execution of binaries from shared memory to reduce risk.
+
+---
+
