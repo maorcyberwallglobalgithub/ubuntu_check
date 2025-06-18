@@ -1,0 +1,73 @@
+# =============================
+# CIS Section 5.3.3.2 - PAM Password Quality
+# =============================
+
+---
+Setting: difok
+Description:
+Number of characters in the new password that must not be present in the old password. Recommended value: >=2.
+
+Current State:
+No setting found for difok.
+
+Audit Result: **FAIL**
+
+---
+Setting: minlen
+Description:
+Minimum password length. Recommended: 14 or more.
+
+Current State:
+No setting found for minlen.
+
+Audit Result: **FAIL**
+
+---
+Setting: maxrepeat
+Description:
+Maximum number of allowed same consecutive characters in a new password. Recommended: <=3 and !=0.
+
+Current State:
+No setting found for maxrepeat.
+
+Audit Result: **FAIL**
+
+---
+Setting: maxsequence
+Description:
+Maximum length of monotonic character sequences in the password. Recommended: <=3 and !=0.
+
+Current State:
+No setting found for maxsequence.
+
+Audit Result: **FAIL**
+
+---
+Setting: dictcheck
+Description:
+Check for dictionary words in the password. Should not be disabled (dictcheck=0).
+
+Current State:
+No setting found for dictcheck.
+
+Audit Result: **FAIL**
+
+---
+Setting: enforcing
+Description:
+Whether password quality checks are enforced (1) or only warnings shown (0). Should be 1.
+
+Current State:
+No setting found for enforcing.
+
+Audit Result: **FAIL**
+
+---
+Setting: enforce_for_root
+Description:
+Ensure password quality checks are enforced for root user.
+
+Current State:
+No setting found for enforce_for_root.
+
+Audit Result: **FAIL**

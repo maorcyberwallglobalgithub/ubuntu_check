@@ -1,0 +1,49 @@
+# =============================
+# CIS Section 5.3.3.4 - Configure pam_unix module
+# =============================
+
+---
+CIS Section: 5.3.3.4.1 – Ensure pam_unix does not include nullok
+---
+
+Rationale: Using a strong password is essential to protecting data.
+Best Practice: Do not include 'nullok' in pam_unix.so lines.
+Recommendation: Remove 'nullok' argument from pam_unix.so if present.
+
+Current State:
+/etc/pam.d/common-auth:auth	[success=1 default=ignore]	pam_unix.so nullok
+Audit Result: **FAIL**
+
+---
+CIS Section: 5.3.3.4.2 – Ensure pam_unix does not include remember
+---
+
+Rationale: The pam_pwhistory module should be used instead of pam_unix remember option.
+Best Practice: Use pam_pwhistory for password history enforcement.
+Recommendation: Remove 'remember=n' argument from pam_unix.so if present.
+
+Current State: No 'remember=n' found in pam_unix.so configuration.
+Audit Result: **PASS**
+
+---
+CIS Section: 5.3.3.4.3 – Ensure pam_unix includes a strong password hashing algorithm
+---
+
+Rationale: Strong hashes protect passwords more effectively.
+Best Practice: Use 'yescrypt' or 'sha512' hashing algorithms.
+Recommendation: Ensure pam_unix.so includes 'yescrypt' or 'sha512' in password section.
+
+Current State:
+/etc/pam.d/common-password:password	[success=1 default=ignore]	pam_unix.so obscure yescrypt
+Audit Result: **PASS**
+
+---
+CIS Section: 5.3.3.4.4 – Ensure pam_unix includes use_authtok
+---
+
+Rationale: Allows consistency when stacking password modules.
+Best Practice: use_authtok should be present in pam_unix.so in password section.
+Recommendation: Add 'use_authtok' to pam_unix.so line in /etc/pam.d/common-password.
+
+Current State: use_authtok not found in pam_unix.so password section.
+Audit Result: **FAIL**

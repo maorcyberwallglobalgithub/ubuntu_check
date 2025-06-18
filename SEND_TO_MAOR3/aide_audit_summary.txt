@@ -1,0 +1,36 @@
+# CIS Section 6.1 - Filesystem Integrity Checking
+# ==============================================
+
+## 6.1.1 Ensure AIDE is installed
+
+Description: AIDE is used to detect unauthorized changes to files.
+Audit:
+Command: dpkg-query -s aide && dpkg-query -s aide-common
+Current State: AIDE or aide-common is missing.
+Audit Result: FAIL
+Expected: AIDE and aide-common should be installed.
+Rationale: Ensures file integrity verification is possible.
+Recommendation: Run 'apt install aide aide-common'
+
+## 6.1.2 Ensure filesystem integrity is regularly checked
+
+Description: Schedule AIDE to run regularly.
+Current State: AIDE check is NOT scheduled.
+Audit Result: FAIL
+Expected: AIDE should run via cron or systemd timer daily.
+Rationale: Periodic integrity checks are essential for security.
+Recommendation: Configure cron or systemd to run 'aide.wrapper --update'
+
+## 6.1.3 Ensure cryptographic mechanisms protect audit tools
+
+Description: Use SHA512, acl, xattrs, etc. in AIDE config to monitor audit tools.
+Audit Tool /sbin/auditctl: MISSING or incomplete flags
+Audit Tool /sbin/auditd: MISSING or incomplete flags
+Audit Tool /sbin/ausearch: MISSING or incomplete flags
+Audit Tool /sbin/aureport: MISSING or incomplete flags
+Audit Tool /sbin/autrace: MISSING or incomplete flags
+Audit Tool /sbin/augenrules: MISSING or incomplete flags
+Audit Result: FAIL
+Expected: All audit tools should include: p+i+n+u+g+s+b+acl+xattrs+sha512
+Rationale: Ensures audit tools themselves are not tampered with.
+Recommendation: Edit /etc/aide/aide.conf and add lines with appropriate monitoring flags for each tool.

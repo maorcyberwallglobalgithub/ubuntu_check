@@ -1,0 +1,127 @@
+# CIS Section 6.3.3 - Auditd Rules Check
+
+---
+6.3.3.1 - Ensure events that modify the sudo log file are collected
+---
+Audit Result: **FAIL**
+
+
+---
+6.3.3.2 - Ensure sudo commands are audited
+---
+Audit Result: **FAIL**
+
+
+---
+6.3.3.3 - Ensure modifications to sudoers are audited
+---
+Audit Result: **FAIL**
+
+
+---
+6.3.3.4 - Ensure date and time changes are audited
+---
+Audit Result: **FAIL**
+
+
+---
+6.3.3.5 - Ensure time zone is audited
+---
+Audit Result: **FAIL**
+
+
+---
+6.3.3.6 - Ensure network environment is audited
+---
+Audit Result: **FAIL**
+
+
+---
+6.3.3.7 - Ensure network state is audited
+---
+Audit Result: **FAIL**
+
+
+---
+6.3.3.8 - Ensure MAC policy modifications are audited
+---
+Audit Result: **FAIL**
+
+
+---
+6.3.3.9 - Ensure use of privileged commands is audited
+---
+Audit Result: **FAIL**
+
+
+---
+6.3.3.10 - Ensure unsuccessful file access is audited
+---
+Audit Result: **FAIL**
+
+
+---
+6.3.3.11 - Ensure successful file access is audited
+---
+Audit Result: **FAIL**
+
+
+---
+6.3.3.12 - Ensure file deletion events are audited
+---
+Audit Result: **FAIL**
+
+
+---
+6.3.3.13 - Ensure kernel module loading/unloading is audited
+---
+Audit Result: **FAIL**
+
+
+---
+6.3.3.14 - Ensure successful user access is audited
+---
+Audit Result: **FAIL**
+
+
+---
+6.3.3.15 - Ensure failed login attempts are audited
+---
+Audit Result: **FAIL**
+
+
+---
+6.3.3.16 - Ensure group modifications are audited
+---
+Audit Result: **FAIL**
+
+
+---
+6.3.3.17 - Ensure user modifications are audited
+---
+Audit Result: **FAIL**
+
+
+---
+6.3.3.18 - Ensure session initiation is audited
+---
+Audit Result: **FAIL**
+
+
+---
+6.3.3.19 - Ensure session termination is audited
+---
+Audit Result: **FAIL**
+
+
+---
+6.3.3.20 - Ensure account access events are audited
+---
+Audit Result: **FAIL**
+
+
+---
+6.3.3.21 - Ensure audit configuration is immutable
+---
+Audit Result: **FAIL**
+

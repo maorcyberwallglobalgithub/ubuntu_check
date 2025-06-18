@@ -1,0 +1,114 @@
+
+---
+CIS Section: 5.4.1.1 – Ensure password expiration is configured
+---
+
+Current State:
+PASS_MAX_DAYS is 
+
+Audit Result: PASS
+
+Rationale:
+Limiting password lifetime reduces the window of opportunity for attackers.
+
+Best Practice:
+Set PASS_MAX_DAYS to 365 or less
+
+Recommendation:
+Edit /etc/login.defs and set PASS_MAX_DAYS 365
+
+
+---
+CIS Section: 5.4.1.2 – Ensure minimum password age is configured
+---
+
+Current State:
+PASS_MIN_DAYS is ; Issues found: 
+
+Audit Result: FAIL
+
+Rationale:
+Prevents rapid password change to circumvent reuse policies.
+
+Best Practice:
+Set PASS_MIN_DAYS to 1 or more
+
+Recommendation:
+Edit /etc/login.defs and set PASS_MIN_DAYS 1
+
+
+---
+CIS Section: 5.4.1.3 – Ensure password expiration warning days is configured
+---
+
+Current State:
+PASS_WARN_AGE is ; Issues found: 
+
+Audit Result: FAIL
+
+Rationale:
+Gives users time to update passwords securely before expiration.
+
+Best Practice:
+Set PASS_WARN_AGE to 7 or more
+
+Recommendation:
+Edit /etc/login.defs and set PASS_WARN_AGE 7
+
+
+---
+CIS Section: 5.4.1.4 – Ensure strong password hashing algorithm is configured
+---
+
+Current State:
+ENCRYPT_METHOD is 
+
+Audit Result: FAIL
+
+Rationale:
+Stronger hash algorithms protect passwords against brute-force attacks.
+
+Best Practice:
+Use SHA512 or YESCRYPT
+
+Recommendation:
+Edit /etc/login.defs and set ENCRYPT_METHOD YESCRYPT
+
+
+---
+CIS Section: 5.4.1.5 – Ensure inactive password lock is configured
+---
+
+Current State:
+Default INACTIVE is -1
+
+Audit Result: PASS
+
+Rationale:
+Inactive accounts are vulnerable to unnoticed compromises.
+
+Best Practice:
+Set default INACTIVE to 45 or less
+
+Recommendation:
+Run: useradd -D -f 45
+
+
+---
+CIS Section: 5.4.1.6 – Ensure all users last password change date is in the past
+---
+
+Current State:
+All last password change dates are valid.
+
+Audit Result: PASS
+
+Rationale:
+Future-dated password changes can bypass password expiration policies.
+
+Best Practice:
+Ensure all password change dates are in the past
+
+Recommendation:
+Use 'chage' to correct future-dated changes
+

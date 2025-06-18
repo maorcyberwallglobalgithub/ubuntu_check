@@ -1,0 +1,402 @@
+# SSH Access Control Audit - CIS Section 5.1
+
+
+# ======================================
+# CIS Section: 5.1.1 Ensure permissions on /etc/ssh/sshd_config
+# ======================================
+
+Current State:
+600 root root
+
+Expected Value / Best Practice:
+600 root root
+
+Rationale:
+sshd configuration must not be modifiable or readable by unauthorized users.
+
+Recommendation:
+Run: chmod 600 /etc/ssh/sshd_config && chown root:root /etc/ssh/sshd_config
+
+Audit Result: PASS
+
+# ======================================
+# CIS Section: 5.1.2 Ensure permissions on SSH private host key files
+# ======================================
+
+Current State:
+/etc/ssh/ssh_host_ed25519_key 600 root root
+/etc/ssh/ssh_host_rsa_key 600 root root
+/etc/ssh/ssh_host_ecdsa_key 600 root root
+
+Expected Value / Best Practice:
+600 root root
+
+Rationale:
+Private host keys must be protected from unauthorized access.
+
+Recommendation:
+Run: chmod 600 and chown root:root on all private SSH host key files.
+
+Audit Result: PASS
+
+# ======================================
+# CIS Section: 5.1.3 Ensure permissions on SSH public host key files
+# ======================================
+
+Current State:
+/etc/ssh/ssh_host_ecdsa_key.pub 644 root root
+/etc/ssh/ssh_host_rsa_key.pub 644 root root
+/etc/ssh/ssh_host_ed25519_key.pub 644 root root
+
+Expected Value / Best Practice:
+644 root root
+
+Rationale:
+Public keys must be readable but not writable.
+
+Recommendation:
+Run: chmod 644 and chown root:root on all public SSH host key files.
+
+Audit Result: PASS
+
+# ======================================
+# CIS Section: 5.1.4 Ensure SSH access is limited
+# ======================================
+
+Current State:
+grep: /etc/ssh/sshd_config: Permission denied
+
+Expected Value / Best Practice:
+.
+
+Rationale:
+Limit SSH access to only specific users/groups.
+
+Recommendation:
+Use AllowUsers, AllowGroups, DenyUsers, or DenyGroups in sshd_config.
+
+Audit Result: PASS
+
+# ======================================
+# CIS Section: 5.1.5 Ensure sshd Banner is configured
+# ======================================
+
+Current State:
+/etc/ssh/sshd_config: Permission denied
+
+Expected Value / Best Practice:
+/etc/issue.net
+
+Rationale:
+Banner warns unauthorized users and supports legal compliance.
+
+Recommendation:
+Set 'Banner /etc/issue.net' in /etc/ssh/sshd_config.
+
+Audit Result: FAIL
+
+# ======================================
+# CIS Section: 5.1.6 Ensure sshd Ciphers are configured
+# ======================================
+
+Current State:
+/etc/ssh/sshd_config: Permission denied
+
+Expected Value / Best Practice:
+aes(128|256)-(gcm|ctr)@openssh.com
+
+Rationale:
+Using weak ciphers may allow data exposure via downgrade attacks.
+
+Recommendation:
+Edit /etc/ssh/sshd_config to set strong Ciphers only.
+
+Audit Result: FAIL
+
+# ======================================
+# CIS Section: 5.1.7 Ensure sshd ClientAliveInterval and ClientAliveCountMax are configured
+# ======================================
+
+Current State:
+/etc/ssh/sshd_config: Permission denied
+
+Expected Value / Best Practice:
+clientaliveinterval.*[1-9]|clientalivecountmax.*[1-9]
+
+Rationale:
+Ensure idle SSH sessions timeout appropriately.
+
+Recommendation:
+Set ClientAliveInterval 15 and ClientAliveCountMax 3.
+
+Audit Result: FAIL
+
+# ======================================
+# CIS Section: 5.1.8 Ensure sshd DisableForwarding is enabled
+# ======================================
+
+Current State:
+/etc/ssh/sshd_config: Permission denied
+
+Expected Value / Best Practice:
+yes
+
+Rationale:
+Disabling forwarding reduces risk of misuse or tunneling attacks.
+
+Recommendation:
+Set DisableForwarding yes in sshd_config.
+
+Audit Result: FAIL
+
+# ======================================
+# CIS Section: 5.1.9 Ensure sshd IgnoreRhosts is enabled
+# ======================================
+
+Current State:
+/etc/ssh/sshd_config: Permission denied
+
+Expected Value / Best Practice:
+yes
+
+Rationale:
+Rhosts-based authentication is insecure.
+
+Recommendation:
+Set IgnoreRhosts yes in sshd_config.
+
+Audit Result: FAIL
+
+# ======================================
+# CIS Section: 5.1.10 Ensure sshd HostbasedAuthentication is disabled
+# ======================================
+
+Current State:
+/etc/ssh/sshd_config: Permission denied
+
+Expected Value / Best Practice:
+no
+
+Rationale:
+Host-based authentication is insecure and can be spoofed.
+
+Recommendation:
+Set HostbasedAuthentication no in sshd_config.
+
+Audit Result: FAIL
+
+# ======================================
+# CIS Section: 5.1.11 Ensure sshd PermitEmptyPasswords is disabled
+# ======================================
+
+Current State:
+/etc/ssh/sshd_config: Permission denied
+
+Expected Value / Best Practice:
+no
+
+Rationale:
+Empty passwords allow unauthorized access.
+
+Recommendation:
+Set PermitEmptyPasswords no in sshd_config.
+
+Audit Result: FAIL
+
+# ======================================
+# CIS Section: 5.1.12 Ensure sshd PermitRootLogin is disabled
+# ======================================
+
+Current State:
+/etc/ssh/sshd_config: Permission denied
+
+Expected Value / Best Practice:
+no
+
+Rationale:
+Disabling direct root login enhances system security.
+
+Recommendation:
+Set PermitRootLogin no in sshd_config.
+
+Audit Result: FAIL
+
+# ======================================
+# CIS Section: 5.1.13 Ensure sshd PermitUserEnvironment is disabled
+# ======================================
+
+Current State:
+/etc/ssh/sshd_config: Permission denied
+
+Expected Value / Best Practice:
+no
+
+Rationale:
+User environment options may allow privilege escalation.
+
+Recommendation:
+Set PermitUserEnvironment no in sshd_config.
+
+Audit Result: FAIL
+
+# ======================================
+# CIS Section: 5.1.14 Ensure only approved MAC algorithms are used
+# ======================================
+
+Current State:
+/etc/ssh/sshd_config: Permission denied
+
+Expected Value / Best Practice:
+hmac-(sha2-512|sha2-256)-etm@openssh.com
+
+Rationale:
+Weak MACs may allow tampering with SSH traffic.
+
+Recommendation:
+Use strong MACs in sshd_config.
+
+Audit Result: FAIL
+
+# ======================================
+# CIS Section: 5.1.15 Ensure sshd LoginGraceTime is set to one minute or less
+# ======================================
+
+Current State:
+/etc/ssh/sshd_config: Permission denied
+
+Expected Value / Best Practice:
+(30|60)
+
+Rationale:
+Short grace time limits unauthorized access attempts.
+
+Recommendation:
+Set LoginGraceTime 60 in sshd_config.
+
+Audit Result: FAIL
+
+# ======================================
+# CIS Section: 5.1.16 Ensure sshd LogLevel is appropriate
+# ======================================
+
+Current State:
+/etc/ssh/sshd_config: Permission denied
+
+Expected Value / Best Practice:
+VERBOSE|INFO
+
+Rationale:
+Proper log level ensures sufficient auditing.
+
+Recommendation:
+Set LogLevel INFO or VERBOSE in sshd_config.
+
+Audit Result: FAIL
+
+# ======================================
+# CIS Section: 5.1.17 Ensure sshd MaxAuthTries is set to 4 or less
+# ======================================
+
+Current State:
+/etc/ssh/sshd_config: Permission denied
+
+Expected Value / Best Practice:
+[1-4]
+
+Rationale:
+Limits brute-force password guessing.
+
+Recommendation:
+Set MaxAuthTries 4 in sshd_config.
+
+Audit Result: FAIL
+
+# ======================================
+# CIS Section: 5.1.18 Ensure sshd MaxStartups is configured
+# ======================================
+
+Current State:
+/etc/ssh/sshd_config: Permission denied
+
+Expected Value / Best Practice:
+.
+
+Rationale:
+Limits concurrent unauthenticated SSH connections.
+
+Recommendation:
+Set MaxStartups to reasonable values like 10:30:60.
+
+Audit Result: PASS
+
+# ======================================
+# CIS Section: 5.1.19 Ensure sshd MaxSessions is limited
+# ======================================
+
+Current State:
+/etc/ssh/sshd_config: Permission denied
+
+Expected Value / Best Practice:
+[1-9]
+
+Rationale:
+Limits abuse of multiplexed SSH sessions.
+
+Recommendation:
+Set MaxSessions to a reasonable number like 10.
+
+Audit Result: FAIL
+
+# ======================================
+# CIS Section: 5.1.20 Ensure sshd AllowTcpForwarding is disabled
+# ======================================
+
+Current State:
+/etc/ssh/sshd_config: Permission denied
+
+Expected Value / Best Practice:
+no
+
+Rationale:
+Disabling TCP forwarding reduces misuse risk.
+
+Recommendation:
+Set AllowTcpForwarding no in sshd_config.
+
+Audit Result: FAIL
+
+# ======================================
+# CIS Section: 5.1.21 Ensure sshd X11Forwarding is disabled
+# ======================================
+
+Current State:
+/etc/ssh/sshd_config: Permission denied
+
+Expected Value / Best Practice:
+no
+
+Rationale:
+X11 forwarding can be abused to capture keystrokes.
+
+Recommendation:
+Set X11Forwarding no in sshd_config.
+
+Audit Result: FAIL
+
+# ======================================
+# CIS Section: 5.1.22 Ensure sshd UsePAM is enabled
+# ======================================
+
+Current State:
+/etc/ssh/sshd_config: Permission denied
+
+Expected Value / Best Practice:
+yes
+
+Rationale:
+PAM supports local authentication policies and controls.
+
+Recommendation:
+Set UsePAM yes in sshd_config.
+
+Audit Result: FAIL

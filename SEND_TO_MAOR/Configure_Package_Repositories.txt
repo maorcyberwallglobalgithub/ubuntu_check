@@ -1,0 +1,198 @@
+CIS Section: 1.2.1.1 – Ensure GPG keys are configured
+
+Current State:
+/etc/apt/trusted.gpg.d/microsoft-prod.gpg
+-----------------------------------------
+pub   rsa2048 2015-10-28 [SC]
+      BC52 8686 B50D 79E3 39D3  721C EB3E 94AD BE12 29CF
+uid           [ unknown] Microsoft (Release signing) <gpgsecurity@microsoft.com>
+
+/etc/apt/trusted.gpg.d/ubuntu-keyring-2012-cdimage.gpg
+------------------------------------------------------
+pub   rsa4096 2012-05-11 [SC]
+      8439 38DF 228D 22F7 B374  2BC0 D94A A3F0 EFE2 1092
+uid           [ unknown] Ubuntu CD Image Automatic Signing Key (2012) <cdimage@ubuntu.com>
+
+/etc/apt/trusted.gpg.d/ubuntu-keyring-2018-archive.gpg
+------------------------------------------------------
+pub   rsa4096 2018-09-17 [SC]
+      F6EC B376 2474 EDA9 D21B  7022 8719 20D1 991B C93C
+uid           [ unknown] Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>
+
+/etc/apt/trusted.gpg.d/ubuntu-pro-esm-apps.gpg
+----------------------------------------------
+pub   rsa4096 2019-11-21 [SC]
+      E8A4 43CE 3581 13D1 87BE  E0E6 AB01 A101 DB53 907B
+uid           [ unknown] Ubuntu Apps Automatic Signing Key <esm@canonical.com>
+sub   rsa4096 2019-11-21 [E]
+
+/etc/apt/trusted.gpg.d/ubuntu-pro-esm-infra.gpg
+-----------------------------------------------
+pub   rsa4096 2019-04-17 [SC]
+      56F7 650A 24C9 E9EC F87C  4D8D 4067 E403 13CB 4B13
+uid           [ unknown] Ubuntu Extended Security Maintenance Automatic Signing Key v2 <esm@canonical.com>
+sub   rsa4096 2019-04-17 [E]
+
+Hardened State:
+GPG keys should be configured for all repositories
+
+Audit Result: **PASS**
+
+Rationale:
+Ensuring that GPG keys are configured helps verify the authenticity of packages and protects against installation of tampered or malicious software.
+
+---
+
+CIS Section: 1.2.1.2 – Ensure package manager repositories are configured
+
+Current State:
+Package files:
+ 100 /var/lib/dpkg/status
+     release a=now
+ 510 https://esm.ubuntu.com/infra/ubuntu jammy-infra-updates/main amd64 Packages
+     release v=22.04,o=UbuntuESM,a=jammy-infra-updates,n=jammy,l=UbuntuESM,c=main,b=amd64
+     origin esm.ubuntu.com
+ 510 https://esm.ubuntu.com/infra/ubuntu jammy-infra-security/main amd64 Packages
+     release v=22.04,o=UbuntuESM,a=jammy-infra-security,n=jammy,l=UbuntuESM,c=main,b=amd64
+     origin esm.ubuntu.com
+ 510 https://esm.ubuntu.com/apps/ubuntu jammy-apps-updates/main amd64 Packages
+     release v=22.04,o=UbuntuESMApps,a=jammy-apps-updates,n=jammy,l=UbuntuESMApps,c=main,b=amd64
+     origin esm.ubuntu.com
+ 510 https://esm.ubuntu.com/apps/ubuntu jammy-apps-security/main amd64 Packages
+     release v=22.04,o=UbuntuESMApps,a=jammy-apps-security,n=jammy,l=UbuntuESMApps,c=main,b=amd64
+     origin esm.ubuntu.com
+ 500 https://deb.nodesource.com/node_18.x nodistro/main amd64 Packages
+     release o=. nodistro,a=nodistro,n=nodistro,l=. nodistro,c=main,b=amd64
+     origin deb.nodesource.com
+ 500 https://packages.microsoft.com/ubuntu/22.04/prod jammy/main all Packages
+     release o=microsoft-ubuntu-jammy-prod jammy,a=jammy,n=jammy,l=microsoft-ubuntu-jammy-prod jammy,c=main,b=all
+     origin packages.microsoft.com
+ 500 https://packages.microsoft.com/ubuntu/22.04/prod jammy/main armhf Packages
+     release o=microsoft-ubuntu-jammy-prod jammy,a=jammy,n=jammy,l=microsoft-ubuntu-jammy-prod jammy,c=main,b=armhf
+     origin packages.microsoft.com
+ 500 https://packages.microsoft.com/ubuntu/22.04/prod jammy/main arm64 Packages
+     release o=microsoft-ubuntu-jammy-prod jammy,a=jammy,n=jammy,l=microsoft-ubuntu-jammy-prod jammy,c=main,b=arm64
+     origin packages.microsoft.com
+ 500 https://packages.microsoft.com/ubuntu/22.04/prod jammy/main amd64 Packages
+     release o=microsoft-ubuntu-jammy-prod jammy,a=jammy,n=jammy,l=microsoft-ubuntu-jammy-prod jammy,c=main,b=amd64
+     origin packages.microsoft.com
+ 500 https://packages.microsoft.com/repos/azure-cli jammy/main all Packages
+     release o=azure-cli jammy,a=jammy,n=jammy,l=azure-cli jammy,c=main,b=all
+     origin packages.microsoft.com
+ 500 https://packages.microsoft.com/repos/azure-cli jammy/main amd64 Packages
+     release o=azure-cli jammy,a=jammy,n=jammy,l=azure-cli jammy,c=main,b=amd64
+     origin packages.microsoft.com
+ 500 http://azure.archive.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages
+     release v=22.04,o=Ubuntu,a=jammy-security,n=jammy,l=Ubuntu,c=multiverse,b=amd64
+     origin azure.archive.ubuntu.com
+ 500 http://azure.archive.ubuntu.com/ubuntu jammy-security/universe amd64 Packages
+     release v=22.04,o=Ubuntu,a=jammy-security,n=jammy,l=Ubuntu,c=universe,b=amd64
+     origin azure.archive.ubuntu.com
+ 500 http://azure.archive.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages
+     release v=22.04,o=Ubuntu,a=jammy-security,n=jammy,l=Ubuntu,c=restricted,b=amd64
+     origin azure.archive.ubuntu.com
+ 500 http://azure.archive.ubuntu.com/ubuntu jammy-security/main amd64 Packages
+     release v=22.04,o=Ubuntu,a=jammy-security,n=jammy,l=Ubuntu,c=main,b=amd64
+     origin azure.archive.ubuntu.com
+ 100 http://azure.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages
+     release v=22.04,o=Ubuntu,a=jammy-backports,n=jammy,l=Ubuntu,c=universe,b=amd64
+     origin azure.archive.ubuntu.com
+ 100 http://azure.archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages
+     release v=22.04,o=Ubuntu,a=jammy-backports,n=jammy,l=Ubuntu,c=main,b=amd64
+     origin azure.archive.ubuntu.com
+ 500 http://azure.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages
+     release v=22.04,o=Ubuntu,a=jammy-updates,n=jammy,l=Ubuntu,c=multiverse,b=amd64
+     origin azure.archive.ubuntu.com
+ 500 http://azure.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages
+     release v=22.04,o=Ubuntu,a=jammy-updates,n=jammy,l=Ubuntu,c=universe,b=amd64
+     origin azure.archive.ubuntu.com
+ 500 http://azure.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages
+     release v=22.04,o=Ubuntu,a=jammy-updates,n=jammy,l=Ubuntu,c=restricted,b=amd64
+     origin azure.archive.ubuntu.com
+ 500 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages
+     release v=22.04,o=Ubuntu,a=jammy-updates,n=jammy,l=Ubuntu,c=main,b=amd64
+     origin azure.archive.ubuntu.com
+ 500 http://azure.archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages
+     release v=22.04,o=Ubuntu,a=jammy,n=jammy,l=Ubuntu,c=multiverse,b=amd64
+     origin azure.archive.ubuntu.com
+ 500 http://azure.archive.ubuntu.com/ubuntu jammy/universe amd64 Packages
+     release v=22.04,o=Ubuntu,a=jammy,n=jammy,l=Ubuntu,c=universe,b=amd64
+     origin azure.archive.ubuntu.com
+ 500 http://azure.archive.ubuntu.com/ubuntu jammy/restricted amd64 Packages
+     release v=22.04,o=Ubuntu,a=jammy,n=jammy,l=Ubuntu,c=restricted,b=amd64
+     origin azure.archive.ubuntu.com
+ 500 http://azure.archive.ubuntu.com/ubuntu jammy/main amd64 Packages
+     release v=22.04,o=Ubuntu,a=jammy,n=jammy,l=Ubuntu,c=main,b=amd64
+     origin azure.archive.ubuntu.com
+Pinned packages:
+     nodejs -> 18.20.8-1nodesource1 with priority 600
+     nodejs -> 18.20.6-1nodesource1 with priority 600
+     nodejs -> 18.20.5-1nodesource1 with priority 600
+     nodejs -> 18.20.4-1nodesource1 with priority 600
+     nodejs -> 18.20.3-1nodesource1 with priority 600
+     nodejs -> 18.20.2-1nodesource1 with priority 600
+     nodejs -> 18.20.1-1nodesource1 with priority 600
+     nodejs -> 18.20.0-1nodesource1 with priority 600
+     nodejs -> 18.19.1-1nodesource1 with priority 600
+     nodejs -> 18.19.0-1nodesource1 with priority 600
+     nodejs -> 18.18.2-1nodesource1 with priority 600
+     nodejs -> 18.18.1-1nodesource1 with priority 600
+     nodejs -> 18.18.0-1nodesource1 with priority 600
+     nodejs -> 18.17.1-1nodesource1 with priority 600
+     nodejs -> 18.17.0-1nodesource1 with priority 600
+     nodejs -> 18.16.1-1nodesource1 with priority 600
+     nodejs -> 18.16.0-1nodesource1 with priority 600
+     nodejs -> 18.15.0-1nodesource1 with priority 600
+     nodejs -> 18.14.2-1nodesource1 with priority 600
+     nodejs -> 18.14.1-1nodesource1 with priority 600
+     nodejs -> 18.14.0-1nodesource1 with priority 600
+     nodejs -> 18.13.0-1nodesource1 with priority 600
+     nodejs -> 18.12.0-1nodesource1 with priority 600
+     nodejs -> 18.11.0-1nodesource1 with priority 600
+     nodejs -> 18.10.0-1nodesource1 with priority 600
+     nodejs -> 18.9.1-1nodesource1 with priority 600
+     nodejs -> 18.9.0-1nodesource1 with priority 600
+     nodejs -> 18.8.0-1nodesource1 with priority 600
+     nodejs -> 18.7.0-1nodesource1 with priority 600
+     nodejs -> 18.6.0-1nodesource1 with priority 600
+     nodejs -> 18.5.0-1nodesource1 with priority 600
+     nodejs -> 18.4.0-1nodesource1 with priority 600
+     nodejs -> 18.3.0-1nodesource1 with priority 600
+     nodejs -> 18.2.0-1nodesource1 with priority 600
+     nodejs -> 18.1.0-1nodesource1 with priority 600
+     nodejs -> 18.0.0-1nodesource1 with priority 600
+     nsolid -> 18.20.8-ns5.7.1 with priority 600
+     nsolid -> 18.20.6-ns5.7.0 with priority 600
+     nsolid -> 18.20.6-ns5.6.1 with priority 600
+     nsolid -> 18.20.5-ns5.6.0 with priority 600
+     nsolid -> 18.20.5-ns5.5.0 with priority 600
+     nsolid -> 18.20.4-ns5.4.0 with priority 600
+     nsolid -> 18.20.4-ns5.3.4 with priority 600
+     nsolid -> 18.20.4-ns5.3.3 with priority 600
+     nsolid -> 18.20.4-ns5.3.2 with priority 600
+     nsolid -> 18.20.4-ns5.3.1 with priority 600
+     nsolid -> 18.20.3-ns5.3.0 with priority 600
+     nsolid -> 18.20.3-ns5.2.3 with priority 600
+     nsolid -> 18.20.3-ns5.2.2 with priority 600
+     nsolid -> 18.20.2-ns5.2.1 with priority 600
+     nsolid -> 18.20.2-ns5.2.0 with priority 600
+     nsolid -> 18.20.2-ns5.1.2 with priority 600
+     nsolid -> 18.20.1-ns5.1.1 with priority 600
+     nsolid -> 18.20.0-ns5.1.0 with priority 600
+     nsolid -> 18.19.1-ns5.0.5 with priority 600
+     nsolid -> 18.19.0-ns5.0.4 with priority 600
+     nsolid -> 18.19.0-ns5.0.3 with priority 600
+     nsolid -> 18.19.0-ns5.0.2 with priority 600
+     nsolid -> 18.19.0-ns5.0.1 with priority 600
+     nsolid -> 18.18.2-ns5.0.0 with priority 600
+
+Hardened State:
+Repositories should be configured according to site policy and must not include untrusted sources
+
+Audit Result: **PASS**
+
+Rationale:
+Ensuring that repositories are properly configured helps guarantee secure, trusted, and consistent software updates.
+
+---
+

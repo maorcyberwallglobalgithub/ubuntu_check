@@ -1,0 +1,77 @@
+# PAM Profiles Audit - CIS Section 5.3.2
+
+
+# ======================================
+# CIS Section: 5.3.2.1 Ensure pam_unix module is enabled
+# ======================================
+
+Current State:
+/etc/pam.d/common-account:account	[success=1 new_authtok_reqd=done default=ignore]	pam_unix.so 
+/etc/pam.d/common-session:session	required	pam_unix.so 
+/etc/pam.d/common-auth:auth	[success=1 default=ignore]	pam_unix.so nullok
+/etc/pam.d/common-password:password	[success=1 default=ignore]	pam_unix.so obscure yescrypt
+
+Expected Value / Best Practice:
+pam_unix\.so
+
+Rationale:
+Ensure system uses standard Unix authentication mechanisms.
+
+Recommendation:
+Run: pam-auth-update --enable unix
+
+Audit Result: PASS
+
+# ======================================
+# CIS Section: 5.3.2.2 Ensure pam_faillock module is enabled
+# ======================================
+
+Current State:
+
+
+Expected Value / Best Practice:
+pam_faillock\.so
+
+Rationale:
+Mitigates brute-force password attacks by locking accounts after repeated failures.
+
+Recommendation:
+Create faillock profiles and run pam-auth-update --enable faillock && --enable faillock_notify
+
+Audit Result: FAIL
+
+# ======================================
+# CIS Section: 5.3.2.3 Ensure pam_pwquality module is enabled
+# ======================================
+
+Current State:
+
+
+Expected Value / Best Practice:
+pam_pwquality\.so
+
+Rationale:
+Enforces strong password complexity rules.
+
+Recommendation:
+If not present, create pwquality profile and run: pam-auth-update --enable pwquality
+
+Audit Result: FAIL
+
+# ======================================
+# CIS Section: 5.3.2.4 Ensure pam_pwhistory module is enabled
+# ======================================
+
+Current State:
+
+
+Expected Value / Best Practice:
+pam_pwhistory\.so
+
+Rationale:
+Prevents users from reusing previous passwords.
+
+Recommendation:
+If not present, create pwhistory profile and run: pam-auth-update --enable pwhistory
+
+Audit Result: FAIL

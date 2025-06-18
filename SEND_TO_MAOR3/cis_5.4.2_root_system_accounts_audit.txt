@@ -1,0 +1,47 @@
+# CIS Section 5.4.2 - Root and System Accounts - Audit
+
+---
+CIS Section: 5.4.2.1 – Ensure root is the only UID 0 account
+---
+Rationale:
+Only the root user should have UID 0 to minimize attack surface.
+Audit:
+Current State:
+root
+Audit Result: PASS
+
+---
+CIS Section: 5.4.2.2 – Ensure root is the only GID 0 account
+---
+Rationale:
+Only root should have GID 0.
+Current State:
+root:0
+Audit Result: PASS
+
+---
+CIS Section: 5.4.2.3 – Ensure group root is the only GID 0 group
+---
+Rationale:
+Only the group 'root' should have GID 0.
+Current State:
+root:0
+Audit Result: PASS
+
+---
+CIS Section: 5.4.2.4 – Ensure root password is set
+---
+Rationale:
+A password must be set for root to secure access.
+Current State:
+User: "root" Password is NOT set
+Audit Result: FAIL
+
+---
+CIS Section: 5.4.2.5 – Ensure root path integrity
+---
+Rationale:
+Ensure root's PATH is secure to avoid execution of rogue binaries.
+Current State:
+Root's path is correctly configured
+Audit Result: PASS

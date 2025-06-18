@@ -1,0 +1,177 @@
+# CIS Section 7.1.x - System File Permissions Audit
+# ===============================================
+
+---
+CIS Section: 7.1.1 - /etc/passwd
+---
+Rationale:
+Protect /etc/passwd from unauthorized write access
+
+Current State:
+Access: (644/-rw-r--r--) Uid: (0/root) Gid: (0/root)
+
+Expected State:
+Permissions: 644, UID: 0, GID: 0
+
+Audit Result: PASS
+
+---
+CIS Section: 7.1.2 - /etc/passwd-
+---
+Rationale:
+Protect backup user account file /etc/passwd-
+
+Current State:
+Access: (644/-rw-r--r--) Uid: (0/root) Gid: (0/root)
+
+Expected State:
+Permissions: 644, UID: 0, GID: 0
+
+Audit Result: PASS
+
+---
+CIS Section: 7.1.3 - /etc/group
+---
+Rationale:
+Protect /etc/group from unauthorized changes
+
+Current State:
+Access: (644/-rw-r--r--) Uid: (0/root) Gid: (0/root)
+
+Expected State:
+Permissions: 644, UID: 0, GID: 0
+
+Audit Result: PASS
+
+---
+CIS Section: 7.1.4 - /etc/group-
+---
+Rationale:
+Protect /etc/group- backup file
+
+Current State:
+Access: (644/-rw-r--r--) Uid: (0/root) Gid: (0/root)
+
+Expected State:
+Permissions: 644, UID: 0, GID: 0
+
+Audit Result: PASS
+
+---
+CIS Section: 7.1.5 - /etc/shadow
+---
+Rationale:
+Protect /etc/shadow from unauthorized access
+
+Current State:
+Access: (640/-rw-r-----) Uid: (0/root) Gid: (42/shadow)
+
+Expected State:
+Permissions: 640, UID: 0, GID: 42
+
+Audit Result: PASS
+
+---
+CIS Section: 7.1.6 - /etc/shadow-
+---
+Rationale:
+Protect /etc/shadow- backup file
+
+Current State:
+Access: (640/-rw-r-----) Uid: (0/root) Gid: (42/shadow)
+
+Expected State:
+Permissions: 640, UID: 0, GID: 42
+
+Audit Result: PASS
+
+---
+CIS Section: 7.1.7 - /etc/gshadow
+---
+Rationale:
+Protect /etc/gshadow from unauthorized access
+
+Current State:
+Access: (640/-rw-r-----) Uid: (0/root) Gid: (42/shadow)
+
+Expected State:
+Permissions: 640, UID: 0, GID: 42
+
+Audit Result: PASS
+
+---
+CIS Section: 7.1.8 - /etc/gshadow-
+---
+Rationale:
+Protect /etc/gshadow- backup file
+
+Current State:
+Access: (640/-rw-r-----) Uid: (0/root) Gid: (42/shadow)
+
+Expected State:
+Permissions: 640, UID: 0, GID: 42
+
+Audit Result: PASS
+
+---
+CIS Section: 7.1.9 - /etc/shells
+---
+Rationale:
+Protect /etc/shells file
+
+Current State:
+Access: (644/-rw-r--r--) Uid: (0/root) Gid: (0/root)
+
+Expected State:
+Permissions: 644, UID: 0, GID: 0
+
+Audit Result: PASS
+
+---
+CIS Section: 7.1.10 - /etc/security/opasswd
+---
+Rationale:
+Protect old passwords stored in /etc/security/opasswd
+
+Current State:
+Access: (600/-rw-------) Uid: (0/root) Gid: (0/root)
+
+Expected State:
+Permissions: 600, UID: 0, GID: 0
+
+Audit Result: PASS
+
+---
+CIS Section: 7.1.11 - World Writable Files and Directories
+---
+
+---
+CIS Section: 7.1.12 - Unowned or Ungrouped Files
+---
+
+---
+CIS Section: 7.1.13 - SUID and SGID Files
+---
+/usr/sbin/mount.cifs
+/usr/sbin/unix_chkpwd
+/usr/sbin/pam_extrausers_chkpwd
+/usr/libexec/polkit-agent-helper-1
+/usr/bin/expiry
+/usr/bin/crontab
+/usr/bin/fusermount3
+/usr/bin/sudo
+/usr/bin/su
+/usr/bin/newgrp
+/usr/bin/pkexec
+/usr/bin/chsh
+/usr/bin/chage
+/usr/bin/umount
+/usr/bin/ssh-agent
+/usr/bin/passwd
+/usr/bin/mount
+/usr/bin/gpasswd
+/usr/bin/chfn
+/usr/lib/x86_64-linux-gnu/utempter/utempter
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/snapd/snap-confine
+/usr/lib/openssh/ssh-keysign

@@ -1,0 +1,558 @@
+===============================
+  Ubuntu 22.04 Security Audit Report  
+===============================
+Date: Wed Jun 18 14:42:51 UTC 2025
+Hostname: project-deployment-vm-staging
+
+-------------------------------
+
+=== Operating System Version ===
+Distributor ID:	Ubuntu
+Description:	Ubuntu 22.04.5 LTS
+Release:	22.04
+Codename:	jammy
+6.8.0-1029-azure
+
+-------------------------------
+
+=== Security Updates (to separate file) ===
+=== SSH Security Settings ===
+Error running: grep -Ei '^PermitRootLogin|^PasswordAuthentication|^Protocol|^ClientAliveInterval|^ClientAliveCountMax' /etc/ssh/sshd_config
+
+-------------------------------
+
+=== Idle Timeout Settings ===
+Error running: grep '^ClientAliveInterval' /etc/ssh/sshd_config
+Error running: grep '^ClientAliveCountMax' /etc/ssh/sshd_config
+
+-------------------------------
+
+=== Account Lockout Policies ===
+# deny = 3
+# fail_interval = 900
+# unlock_time = 600
+# even_deny_root
+# This option implies the `even_deny_root` option.
+# the value is the same as of the `unlock_time` option.
+# root_unlock_time = 900
+# the root account (the options `even_deny_root>` and
+# `root_unlock_time` will apply to them.
+
+-------------------------------
+
+=== Password Policy ===
+PASS_MAX_DAYS	99999
+PASS_MIN_DAYS	0
+PASS_WARN_AGE	7
+Error running: grep -E 'minlen|minclass|dcredit|ucredit|lcredit|ocredit|maxrepeat|difok' /etc/security/pwquality.conf
+Error running: grep -E '^password.*pam_pwquality' /etc/pam.d/common-password
+
+-------------------------------
+
+=== Users with UID 0 ===
+root
+
+-------------------------------
+
+=== Sudoers Configuration ===
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo	ALL=(ALL:ALL) ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Error running: ls -l /etc/sudoers.d/
+
+-------------------------------
+
+=== User and Group Configuration ===
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:102:105::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:103:106:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+syslog:x:104:111::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:112:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:113::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:114::/nonexistent:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+pollinate:x:110:1::/var/cache/pollinate:/bin/false
+landscape:x:111:116::/var/lib/landscape:/usr/sbin/nologin
+fwupd-refresh:x:112:117:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+_chrony:x:113:122:Chrony daemon,,,:/var/lib/chrony:/usr/sbin/nologin
+azureuser:x:1000:1000:Ubuntu:/home/azureuser:/bin/bash
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+azureagent:x:1001:1001::/home/azureagent:/bin/bash
+rtkit:x:114:123:RealtimeKit,,,:/proc:/usr/sbin/nologin
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,azureuser
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:azureuser
+fax:x:21:
+voice:x:22:
+cdrom:x:24:azureuser
+floppy:x:25:azureuser
+tape:x:26:
+sudo:x:27:azureuser
+audio:x:29:azureuser
+dip:x:30:azureuser
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:azureuser
+sasl:x:45:
+plugdev:x:46:azureuser
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+crontab:x:104:
+messagebus:x:105:
+systemd-timesync:x:106:
+input:x:107:
+sgx:x:108:
+kvm:x:109:
+render:x:110:
+syslog:x:111:
+tss:x:112:
+uuidd:x:113:
+tcpdump:x:114:
+_ssh:x:115:
+landscape:x:116:
+fwupd-refresh:x:117:
+admin:x:118:
+netdev:x:119:azureuser
+lxd:x:120:azureuser
+sgx_prv:x:121:
+_chrony:x:122:
+azureuser:x:1000:
+azureagent:x:1001:
+rtkit:x:123:
+Username         Port     From             Latest
+root                                       **Never logged in**
+daemon                                     **Never logged in**
+bin                                        **Never logged in**
+sys                                        **Never logged in**
+sync                                       **Never logged in**
+games                                      **Never logged in**
+man                                        **Never logged in**
+lp                                         **Never logged in**
+mail                                       **Never logged in**
+news                                       **Never logged in**
+uucp                                       **Never logged in**
+proxy                                      **Never logged in**
+www-data                                   **Never logged in**
+backup                                     **Never logged in**
+list                                       **Never logged in**
+irc                                        **Never logged in**
+gnats                                      **Never logged in**
+nobody                                     **Never logged in**
+systemd-network                            **Never logged in**
+systemd-resolve                            **Never logged in**
+messagebus                                 **Never logged in**
+systemd-timesync                           **Never logged in**
+syslog                                     **Never logged in**
+_apt                                       **Never logged in**
+tss                                        **Never logged in**
+uuidd                                      **Never logged in**
+tcpdump                                    **Never logged in**
+sshd                                       **Never logged in**
+pollinate                                  **Never logged in**
+landscape                                  **Never logged in**
+fwupd-refresh                              **Never logged in**
+_chrony                                    **Never logged in**
+azureuser        pts/0    10.0.6.5         Wed Jun 18 14:06:29 +0000 2025
+lxd                                        **Never logged in**
+azureagent                                 **Never logged in**
+rtkit                                      **Never logged in**
+Error running: awk -F: '(== || ==!* || ==!!) {print  
+Error running: awk -F: '{ if ( == /bin/bash) print  
+
+-------------------------------
+
+=== Running Services and Ports ===
+Netid State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess
+udp   UNCONN 0      0          127.0.0.1:323       0.0.0.0:*          
+udp   UNCONN 0      0      127.0.0.53%lo:53        0.0.0.0:*          
+udp   UNCONN 0      0      10.0.5.4%eth0:68        0.0.0.0:*          
+udp   UNCONN 0      0              [::1]:323          [::]:*          
+tcp   LISTEN 0      128          0.0.0.0:22        0.0.0.0:*          
+tcp   LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*          
+tcp   LISTEN 0      128             [::]:22           [::]:*          
+  UNIT                                                                               LOAD   ACTIVE SUB     DESCRIPTION
+  chrony.service                                                                     loaded active running chrony, an NTP client/server
+  cron.service                                                                       loaded active running Regular background program processing daemon
+  dbus.service                                                                       loaded active running D-Bus System Message Bus
+  getty@tty1.service                                                                 loaded active running Getty on tty1
+  hv-kvp-daemon.service                                                              loaded active running Hyper-V KVP Protocol Daemon
+  multipathd.service                                                                 loaded active running Device-Mapper Multipath Device Controller
+  networkd-dispatcher.service                                                        loaded active running Dispatcher daemon for systemd-networkd
+  packagekit.service                                                                 loaded active running PackageKit Daemon
+  polkit.service                                                                     loaded active running Authorization Manager
+  rsyslog.service                                                                    loaded active running System Logging Service
+  rtkit-daemon.service                                                               loaded active running RealtimeKit Scheduling Policy Service
+  serial-getty@ttyS0.service                                                         loaded active running Serial Getty on ttyS0
+  snap.canonical-livepatch.canonical-livepatchd.service                              loaded active running Service for snap application canonical-livepatch.canonical-livepatchd
+  snapd.service                                                                      loaded active running Snap Daemon
+  ssh.service                                                                        loaded active running OpenBSD Secure Shell server
+  systemd-journald.service                                                           loaded active running Journal Service
+  systemd-logind.service                                                             loaded active running User Login Management
+  systemd-networkd.service                                                           loaded active running Network Configuration
+  systemd-resolved.service                                                           loaded active running Network Name Resolution
+  systemd-udevd.service                                                              loaded active running Rule-based Manager for Device Events and Files
+  unattended-upgrades.service                                                        loaded active running Unattended Upgrades Shutdown
+  user@1000.service                                                                  loaded active running User Manager for UID 1000
+  uuidd.service                                                                      loaded active running Daemon for generating UUIDs
+  vsts.agent.masavweb.staging\x2dpool.project\x2ddeployment\x2dvm\x2dstaging.service loaded active running Azure Pipelines Agent (masavweb.staging-pool.project-deployment-vm-staging)
+  walinuxagent.service                                                               loaded active running Azure Linux Agent
+
+LOAD   = Reflects whether the unit definition was properly loaded.
+ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
+SUB    = The low-level unit activation state, values depend on unit type.
+25 loaded units listed.
+snap-canonical\x2dlivepatch-316.mount                                              enabled         enabled
+snap-canonical\x2dlivepatch-333.mount                                              enabled         enabled
+snap-core20-2582.mount                                                             enabled         enabled
+snap-core20-2599.mount                                                             enabled         enabled
+snap-core22-1981.mount                                                             enabled         enabled
+snap-core22-2010.mount                                                             enabled         enabled
+snap-lxd-31333.mount                                                               enabled         enabled
+snap-snapd-24671.mount                                                             enabled         enabled
+apport-autoreport.path                                                             enabled         enabled
+apparmor.service                                                                   enabled         enabled
+blk-availability.service                                                           enabled         enabled
+chrony.service                                                                     enabled         enabled
+cloud-config.service                                                               enabled         enabled
+cloud-final.service                                                                enabled         enabled
+cloud-init-local.service                                                           enabled         enabled
+cloud-init.service                                                                 enabled         enabled
+console-setup.service                                                              enabled         enabled
+cron.service                                                                       enabled         enabled
+cryptdisks-early.service                                                           masked          enabled
+cryptdisks.service                                                                 masked          enabled
+dmesg.service                                                                      enabled         enabled
+e2scrub_reap.service                                                               enabled         enabled
+ephemeral-disk-warning.service                                                     enabled         enabled
+finalrd.service                                                                    enabled         enabled
+getty@.service                                                                     enabled         enabled
+grub-common.service                                                                enabled         enabled
+grub-initrd-fallback.service                                                       enabled         enabled
+hv-fcopy-daemon.service                                                            enabled         enabled
+hv-kvp-daemon.service                                                              enabled         enabled
+hv-vss-daemon.service                                                              enabled         enabled
+hwclock.service                                                                    masked          enabled
+intel-sgx-load-module.service                                                      disabled        enabled
+irqbalance.service                                                                 enabled         enabled
+iscsid.service                                                                     disabled        enabled
+keyboard-setup.service                                                             enabled         enabled
+lvm2-monitor.service                                                               enabled         enabled
+lvm2.service                                                                       masked          enabled
+lxd-agent.service                                                                  enabled         enabled
+MsftLinuxPatchAutoAssess.service                                                   enabled         enabled
+multipath-tools-boot.service                                                       masked          enabled
+multipathd.service                                                                 enabled         enabled
+netplan-ovs-cleanup.service                                                        enabled-runtime enabled
+networkd-dispatcher.service                                                        enabled         enabled
+nftables.service                                                                   disabled        enabled
+nvmefc-boot-connections.service                                                    enabled         enabled
+nvmf-autoconnect.service                                                           enabled         enabled
+open-iscsi.service                                                                 enabled         enabled
+open-vm-tools.service                                                              enabled         enabled
+pollinate.service                                                                  enabled         enabled
+rc.service                                                                         masked          enabled
+rcS.service                                                                        masked          enabled
+rsync.service                                                                      disabled        enabled
+rsyslog.service                                                                    enabled         enabled
+rtkit-daemon.service                                                               disabled        enabled
+screen-cleanup.service                                                             masked          enabled
+secureboot-db.service                                                              enabled         enabled
+serial-getty@.service                                                              indirect        enabled
+setvtrgb.service                                                                   enabled         enabled
+snap.canonical-livepatch.canonical-livepatchd.service                              enabled         enabled
+snap.lxd.activate.service                                                          enabled         enabled
+snapd.apparmor.service                                                             enabled         enabled
+snapd.autoimport.service                                                           enabled         enabled
+snapd.core-fixup.service                                                           enabled         enabled
+snapd.recovery-chooser-trigger.service                                             enabled         enabled
+snapd.seeded.service                                                               enabled         enabled
+snapd.service                                                                      enabled         enabled
+snapd.system-shutdown.service                                                      enabled         enabled
+ssh.service                                                                        enabled         enabled
+sudo.service                                                                       masked          enabled
+sysstat.service                                                                    enabled         enabled
+systemd-fsck-root.service                                                          enabled-runtime enabled
+systemd-network-generator.service                                                  disabled        enabled
+systemd-networkd-wait-online.service                                               enabled         disabled
+systemd-networkd.service                                                           enabled         enabled
+systemd-pstore.service                                                             enabled         enabled
+systemd-remount-fs.service                                                         enabled-runtime enabled
+systemd-resolved.service                                                           enabled         enabled
+systemd-sysext.service                                                             disabled        enabled
+ua-auto-attach.service                                                             enabled         enabled
+ua-reboot-cmds.service                                                             enabled         enabled
+ubuntu-advantage.service                                                           enabled         enabled
+ufw.service                                                                        enabled         enabled
+unattended-upgrades.service                                                        enabled         enabled
+uuidd.service                                                                      indirect        enabled
+vgauth.service                                                                     enabled         enabled
+vsts.agent.masavweb.staging\x2dpool.project\x2ddeployment\x2dvm\x2dstaging.service enabled         enabled
+walinuxagent-network-setup.service                                                 enabled         enabled
+walinuxagent.service                                                               enabled         enabled
+x11-common.service                                                                 masked          enabled
+apport-forward.socket                                                              enabled         enabled
+cloud-init-hotplugd.socket                                                         enabled         enabled
+dm-event.socket                                                                    enabled         enabled
+iscsid.socket                                                                      enabled         enabled
+lvm2-lvmpolld.socket                                                               enabled         enabled
+multipathd.socket                                                                  enabled         enabled
+snap.lxd.daemon.unix.socket                                                        enabled         enabled
+snap.lxd.user-daemon.unix.socket                                                   enabled         enabled
+snapd.socket                                                                       enabled         enabled
+ssh.socket                                                                         disabled        enabled
+systemd-networkd.socket                                                            enabled         enabled
+uuidd.socket                                                                       enabled         enabled
+cloud-init.target                                                                  enabled-runtime enabled
+reboot.target                                                                      disabled        enabled
+remote-cryptsetup.target                                                           disabled        enabled
+remote-fs.target                                                                   enabled         enabled
+remote-veritysetup.target                                                          disabled        enabled
+apport-autoreport.timer                                                            enabled         enabled
+apt-daily-upgrade.timer                                                            enabled         enabled
+apt-daily.timer                                                                    enabled         enabled
+chrony-dnssrv@.timer                                                               disabled        enabled
+dpkg-db-backup.timer                                                               enabled         enabled
+e2scrub_all.timer                                                                  enabled         enabled
+fstrim.timer                                                                       enabled         enabled
+logrotate.timer                                                                    enabled         enabled
+man-db.timer                                                                       enabled         enabled
+mdcheck_continue.timer                                                             enabled         enabled
+mdcheck_start.timer                                                                enabled         enabled
+mdmonitor-oneshot.timer                                                            enabled         enabled
+motd-news.timer                                                                    enabled         enabled
+MsftLinuxPatchAutoAssess.timer                                                     enabled         enabled
+snapd.snap-repair.timer                                                            enabled         enabled
+sysstat-collect.timer                                                              enabled         enabled
+sysstat-summary.timer                                                              enabled         enabled
+ua-timer.timer                                                                     enabled         enabled
+update-notifier-download.timer                                                     enabled         enabled
+update-notifier-motd.timer                                                         enabled         enabled
+xfs_scrub_all.timer                                                                disabled        enabled
+
+-------------------------------
+
+=== AppArmor Status ===
+apparmor module is loaded.
+48 profiles are loaded.
+48 profiles are in enforce mode.
+   /snap/snapd/24671/usr/lib/snapd/snap-confine
+   /snap/snapd/24671/usr/lib/snapd/snap-confine//mount-namespace-capture-helper
+   /usr/bin/man
+   /usr/lib/NetworkManager/nm-dhcp-client.action
+   /usr/lib/NetworkManager/nm-dhcp-helper
+   /usr/lib/connman/scripts/dhclient-script
+   /usr/lib/snapd/snap-confine
+   /usr/lib/snapd/snap-confine//mount-namespace-capture-helper
+   /usr/sbin/chronyd
+   /{,usr/}sbin/dhclient
+   lsb_release
+   man_filter
+   man_groff
+   nvidia_modprobe
+   nvidia_modprobe//kmod
+   snap-update-ns.canonical-livepatch
+   snap-update-ns.lxd
+   snap.canonical-livepatch.canonical-livepatch
+   snap.canonical-livepatch.canonical-livepatchd
+   snap.canonical-livepatch.hook.configure
+   snap.canonical-livepatch.hook.connect-plug-etc-update-motd-d
+   snap.canonical-livepatch.hook.disconnect-plug-etc-update-motd-d
+   snap.canonical-livepatch.hook.post-refresh
+   snap.canonical-livepatch.hook.remove
+   snap.lxd.activate
+   snap.lxd.benchmark
+   snap.lxd.buginfo
+   snap.lxd.check-kernel
+   snap.lxd.daemon
+   snap.lxd.hook.configure
+   snap.lxd.hook.install
+   snap.lxd.hook.remove
+   snap.lxd.lxc
+   snap.lxd.lxc-to-lxd
+   snap.lxd.lxd
+   snap.lxd.migrate
+   snap.lxd.user-daemon
+   tcpdump
+   ubuntu_pro_apt_news
+   ubuntu_pro_esm_cache
+   ubuntu_pro_esm_cache//apt_methods
+   ubuntu_pro_esm_cache//apt_methods_gpgv
+   ubuntu_pro_esm_cache//cloud_id
+   ubuntu_pro_esm_cache//dpkg
+   ubuntu_pro_esm_cache//ps
+   ubuntu_pro_esm_cache//ubuntu_distro_info
+   ubuntu_pro_esm_cache_systemctl
+   ubuntu_pro_esm_cache_systemd_detect_virt
+0 profiles are in complain mode.
+0 profiles are in kill mode.
+0 profiles are in unconfined mode.
+3 processes have profiles defined.
+3 processes are in enforce mode.
+   /usr/sbin/chronyd (612) 
+   /usr/sbin/chronyd (621) 
+   /snap/canonical-livepatch/333/canonical-livepatchd (77696) snap.canonical-livepatch.canonical-livepatchd
+0 processes are in complain mode.
+0 processes are unconfined but have a profile defined.
+0 processes are in mixed mode.
+0 processes are in kill mode.
+apparmor module is loaded.
+48 profiles are loaded.
+48 profiles are in enforce mode.
+   /snap/snapd/24671/usr/lib/snapd/snap-confine
+   /snap/snapd/24671/usr/lib/snapd/snap-confine//mount-namespace-capture-helper
+   /usr/bin/man
+   /usr/lib/NetworkManager/nm-dhcp-client.action
+   /usr/lib/NetworkManager/nm-dhcp-helper
+   /usr/lib/connman/scripts/dhclient-script
+   /usr/lib/snapd/snap-confine
+   /usr/lib/snapd/snap-confine//mount-namespace-capture-helper
+   /usr/sbin/chronyd
+   /{,usr/}sbin/dhclient
+   lsb_release
+   man_filter
+   man_groff
+   nvidia_modprobe
+   nvidia_modprobe//kmod
+   snap-update-ns.canonical-livepatch
+   snap-update-ns.lxd
+   snap.canonical-livepatch.canonical-livepatch
+   snap.canonical-livepatch.canonical-livepatchd
+   snap.canonical-livepatch.hook.configure
+   snap.canonical-livepatch.hook.connect-plug-etc-update-motd-d
+   snap.canonical-livepatch.hook.disconnect-plug-etc-update-motd-d
+   snap.canonical-livepatch.hook.post-refresh
+   snap.canonical-livepatch.hook.remove
+   snap.lxd.activate
+   snap.lxd.benchmark
+   snap.lxd.buginfo
+   snap.lxd.check-kernel
+   snap.lxd.daemon
+   snap.lxd.hook.configure
+   snap.lxd.hook.install
+   snap.lxd.hook.remove
+   snap.lxd.lxc
+   snap.lxd.lxc-to-lxd
+   snap.lxd.lxd
+   snap.lxd.migrate
+   snap.lxd.user-daemon
+   tcpdump
+   ubuntu_pro_apt_news
+   ubuntu_pro_esm_cache
+   ubuntu_pro_esm_cache//apt_methods
+   ubuntu_pro_esm_cache//apt_methods_gpgv
+   ubuntu_pro_esm_cache//cloud_id
+   ubuntu_pro_esm_cache//dpkg
+   ubuntu_pro_esm_cache//ps
+   ubuntu_pro_esm_cache//ubuntu_distro_info
+   ubuntu_pro_esm_cache_systemctl
+   ubuntu_pro_esm_cache_systemd_detect_virt
+0 profiles are in complain mode.
+0 profiles are in kill mode.
+0 profiles are in unconfined mode.
+3 processes have profiles defined.
+3 processes are in enforce mode.
+   /usr/sbin/chronyd (612) 
+   /usr/sbin/chronyd (621) 
+   /snap/canonical-livepatch/333/canonical-livepatchd (77696) snap.canonical-livepatch.canonical-livepatchd
+0 processes are in complain mode.
+0 processes are unconfined but have a profile defined.
+0 processes are in mixed mode.
+0 processes are in kill mode.
+
+-------------------------------
+

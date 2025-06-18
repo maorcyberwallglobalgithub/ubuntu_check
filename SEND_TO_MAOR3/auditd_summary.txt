@@ -1,0 +1,24 @@
+# Auditd Configuration Summary
+# ===============================
+
+## Check 1: auditd installed
+Auditd is not installed: FAIL
+Remediation: sudo apt install auditd
+
+## Check 2: auditd enabled on boot
+Auditd is not enabled: FAIL
+Remediation: sudo systemctl enable auditd
+
+## Check 3: auditd service is active
+Auditd is not running: FAIL
+Remediation: sudo systemctl start auditd
+
+## Check 4: Audit log directory (/var/log/audit) permissions
+/var/log/audit does not exist: FAIL
+
+## Check 5: Basic audit rules exist
+Syscall rules missing: FAIL
+Remediation: Define rules under /etc/audit/rules.d/*.rules and run augenrules --load
+
+## Check 6: UID_MIN detection
+System UID_MIN: 1000

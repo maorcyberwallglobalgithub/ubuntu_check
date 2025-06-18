@@ -1,0 +1,34 @@
+# =============================
+# CIS Section 5.4.3 - Configure User Default Environment
+# =============================
+
+## 5.4.3.1 Ensure nologin is not listed in /etc/shells
+Description: /etc/shells lists valid login shells. Including '/nologin' here can mistakenly identify service accounts as valid users.
+Audit Result: PASS
+Current State: /nologin NOT found
+Remediation: Remove any lines that include '/nologin' from /etc/shells.
+
+## 5.4.3.2 Ensure default user shell timeout is configured
+Description: Set TMOUT to automatically timeout idle shells after 900 seconds (15 minutes).
+Audit Instructions: Manually check for TMOUT=900, readonly TMOUT, and export TMOUT in:
+  - /etc/profile
+  - /etc/profile.d/*.sh
+  - /etc/bashrc
+Remediation: Add the following lines to a file like /etc/profile.d/tmout.sh:
+  TMOUT=900
+  readonly TMOUT
+  export TMOUT
+
+## 5.4.3.3 Ensure default user umask is configured
+Description: Ensure the umask is globally set to 027 or more restrictive (e.g., 027, 077).
+Audit Instructions: Check the following files for umask setting:
+  - /etc/profile
+  - /etc/profile.d/*.sh
+  - /etc/bashrc
+  - /etc/login.defs
+  - /etc/default/login
+Remediation: Add this line to /etc/profile.d/secure_umask.sh:
+  umask 027
+Or update relevant files to reflect this restriction.
+
+# End of audit section 5.4.3

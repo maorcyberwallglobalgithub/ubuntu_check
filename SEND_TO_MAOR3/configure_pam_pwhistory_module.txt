@@ -1,0 +1,57 @@
+
+---
+CIS Section: 5.3.3.3.1 – Ensure password history remember is configured
+---
+
+Rationale:
+Requiring users not to reuse their passwords makes it less likely that an attacker will be able to guess the password or use a compromised password.
+
+Best Practice:
+Ensure pam_pwhistory.so includes remember=24 or more in /etc/pam.d/common-password.
+
+Current State:
+pam_pwhistory.so not configured with remember option.
+
+Audit Result: **FAIL**
+
+Recommendation:
+Edit the pam_pwhistory.so line in /usr/share/pam-configs/pwhistory to include remember=24 or more, and run pam-auth-update --enable pwhistory.
+
+
+---
+CIS Section: 5.3.3.3.2 – Ensure password history is enforced for the root user
+---
+
+Rationale:
+Requiring password history enforcement for the root user reduces risk of repeated use of compromised passwords.
+
+Best Practice:
+Ensure pam_pwhistory.so includes enforce_for_root.
+
+Current State:
+pam_pwhistory.so not configured with enforce_for_root.
+
+Audit Result: **FAIL**
+
+Recommendation:
+Edit the pam_pwhistory.so line to include enforce_for_root and run pam-auth-update --enable pwhistory.
+
+
+---
+CIS Section: 5.3.3.3.3 – Ensure pam_pwhistory includes use_authtok
+---
+
+Rationale:
+use_authtok allows consistent handling of new passwords across PAM modules.
+
+Best Practice:
+Ensure pam_pwhistory.so includes use_authtok.
+
+Current State:
+pam_pwhistory.so not configured with use_authtok.
+
+Audit Result: **FAIL**
+
+Recommendation:
+Edit the pam_pwhistory.so line to include use_authtok and run pam-auth-update --enable pwhistory.
+

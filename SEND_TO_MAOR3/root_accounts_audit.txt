@@ -1,0 +1,89 @@
+# Root Account and Environment Audit - CIS Section 5.4.2
+
+
+# ======================================
+# CIS Section: 5.4.2.6 Ensure root user umask is configured
+# ======================================
+
+Current State:
+No insecure umask found.
+
+Expected Value / Best Practice:
+umask 027 or more restrictive
+
+Rationale:
+Setting a secure value for umask ensures files/directories have restricted default permissions.
+
+Recommendation:
+Edit /root/.bash_profile and /root/.bashrc and ensure umask is set to 027 or more restrictive.
+
+Audit Result: PASS
+
+# ======================================
+# CIS Section: 5.4.2.7 Ensure system accounts do not have a valid login shell
+# ======================================
+
+Current State:
+All system accounts properly configured.
+
+Expected Value / Best Practice:
+Only exempted system accounts (root, halt, sync, shutdown, nfsnobody) may have valid shells
+
+Rationale:
+System accounts should not have interactive shells to prevent abuse.
+
+Recommendation:
+Run 'usermod -s /usr/sbin/nologin <user>' for any account listed.
+
+Audit Result: PASS
+
+# ======================================
+# CIS Section: 5.4.2.8 Ensure accounts without valid login shell are locked
+# ======================================
+
+Current State:
+daemon
+bin
+sys
+sync
+games
+man
+lp
+mail
+news
+uucp
+proxy
+www-data
+backup
+list
+irc
+gnats
+nobody
+systemd-network
+systemd-resolve
+messagebus
+systemd-timesync
+syslog
+_apt
+tss
+uuidd
+tcpdump
+sshd
+pollinate
+landscape
+fwupd-refresh
+_chrony
+lxd
+rtkit
+
+
+Expected Value / Best Practice:
+Accounts without login shell must be locked
+
+Rationale:
+Non-login service accounts should be locked to prevent misuse.
+
+Recommendation:
+Run 'usermod -L <user>' for each user listed.
+
+Audit Result: FAIL

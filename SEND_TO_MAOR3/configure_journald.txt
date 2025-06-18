@@ -1,0 +1,136 @@
+# =============================
+# CIS Section 6.2.1 - Configure Journald
+# =============================
+
+## 6.2.1.1.1 Ensure journald service is enabled and active
+**Description:**
+Ensure that systemd-journald is enabled and running.
+
+**Expected Value:**
+active
+
+**Rationale:**
+If journald is not active, system logs will not be collected.
+
+**Current State:**
+active
+
+**Audit Result:**
+PASS
+
+**Recommendation:**
+systemctl unmask systemd-journald.service && systemctl start systemd-journald.service
+---
+
+
+## 6.2.1.1.2 Ensure journald log file access is configured
+**Description:**
+Ensure log file permissions are set to 0640 or more restrictive.
+
+**Expected Value:**
+640
+
+**Rationale:**
+Protect sensitive log files from unauthorized access.
+
+**Current State:**
+640 /var/log/journal/5feadfbc1c5849a2b89e027c1fcfec2d/system@0006362e29062279-ddc98122c70b53a8.journal~
+640 /var/log/journal/5feadfbc1c5849a2b89e027c1fcfec2d/user-1000.journal
+640 /var/log/journal/5feadfbc1c5849a2b89e027c1fcfec2d/user-1000@0006362e29a65e77-b865b74b7d250cac.journal~
+640 /var/log/journal/5feadfbc1c5849a2b89e027c1fcfec2d/user-1001@91ce7b694d9f497493723609c078e457-0000000000002171-000635bd18921df3.journal
+640 /var/log/journal/5feadfbc1c5849a2b89e027c1fcfec2d/system@4cb87388a0de4a7eba0d8c7c00128267-0000000000000001-0006356cec9a9aba.journal
+640 /var/log/journal/5feadfbc1c5849a2b89e027c1fcfec2d/system.journal
+640 /var/log/journal/5feadfbc1c5849a2b89e027c1fcfec2d/user-1000@e65101c8340b4e149b8870c5125a920b-0000000000000dc7-00063577a64b4da8.journal
+
+**Audit Result:**
+PASS
+
+**Recommendation:**
+Use chmod to set permissions and chown if needed.
+---
+
+
+## 6.2.1.1.3 Ensure journald log file rotation is configured
+**Description:**
+Ensure journald rotates logs to avoid large file sizes.
+
+**Expected Value:**
+SystemMaxUse
+
+**Rationale:**
+Manage log size for storage and readability.
+
+**Current State:**
+/etc/systemd/journald.conf:#SystemMaxUse=
+/etc/systemd/journald.conf:#SystemKeepFree=
+/etc/systemd/journald.conf:#RuntimeMaxUse=
+/etc/systemd/journald.conf:#RuntimeKeepFree=
+/etc/systemd/journald.conf:#MaxFileSec=1month
+
+**Audit Result:**
+PASS
+
+**Recommendation:**
+Set appropriate values in /etc/systemd/journald.conf or .conf.d files
+---
+
+
+## 6.2.1.1.4 Ensure journald ForwardToSyslog is disabled
+**Description:**
+Ensure journald does not forward logs to syslog.
+
+**Expected Value:**
+ForwardToSyslog=no
+
+**Rationale:**
+Prevent redundancy or exposure via other logging systems.
+
+**Current State:**
+
+**Audit Result:**
+FAIL
+
+**Recommendation:**
+Add 'ForwardToSyslog=no' under [Journal] section in journald.conf
+---
+
+
+## 6.2.1.1.5 Ensure journald Storage is configured
+**Description:**
+Ensure journald log storage is persistent.
+
+**Expected Value:**
+Storage=persistent
+
+**Rationale:**
+Allow logs to persist after reboots for forensic use.
+
+**Current State:**
+
+**Audit Result:**
+FAIL
+
+**Recommendation:**
+Add 'Storage=persistent' under [Journal] section in journald.conf
+---
+
+
+## 6.2.1.1.6 Ensure journald Compress is configured
+**Description:**
+Ensure journald compresses logs.
+
+**Expected Value:**
+Compress=yes
+
+**Rationale:**
+Prevent logs from consuming too much disk space.
+
+**Current State:**
+
+**Audit Result:**
+FAIL
+
+**Recommendation:**
+Add 'Compress=yes' under [Journal] section in journald.conf
+---
+

@@ -1,0 +1,344 @@
+# =============================
+# CIS Section 3.3 - Disable Unused Network Protocols
+# =============================
+
+---
+CIS Section: 3.3.1 – Disable dccp
+Audit Commands:
+  modprobe -n -v dccp
+  lsmod | grep dccp
+  grep -r '^blacklist dccp' /etc/modprobe.d/
+
+Rationale:
+Disabling unused or insecure protocols like dccp reduces kernel attack surface and limits risk exposure.
+
+Current Value:
+  Module is loadable (insmod /lib/modules/6.8.0-1029-azure/kernel/net/dccp/dccp.ko )
+  Module is not currently loaded
+  Module is not blacklisted
+
+Best Practice Value:
+  The dccp module should not be loadable, not currently loaded, and should be blacklisted.
+
+Audit Result: **FAIL**
+
+Recommendation:
+  To disable dccp, run the following commands:
+    echo 'install dccp /bin/true' >> /etc/modprobe.d/dccp.conf
+    echo 'blacklist dccp' >> /etc/modprobe.d/dccp.conf
+    modprobe -r dccp (if currently loaded)
+
+---
+CIS Section: 3.3.2 – Disable sctp
+Audit Commands:
+  modprobe -n -v sctp
+  lsmod | grep sctp
+  grep -r '^blacklist sctp' /etc/modprobe.d/
+
+Rationale:
+Disabling unused or insecure protocols like sctp reduces kernel attack surface and limits risk exposure.
+
+Current Value:
+  Module is loadable (insmod /lib/modules/6.8.0-1029-azure/kernel/net/sctp/sctp.ko )
+  Module is not currently loaded
+  Module is not blacklisted
+
+Best Practice Value:
+  The sctp module should not be loadable, not currently loaded, and should be blacklisted.
+
+Audit Result: **FAIL**
+
+Recommendation:
+  To disable sctp, run the following commands:
+    echo 'install sctp /bin/true' >> /etc/modprobe.d/sctp.conf
+    echo 'blacklist sctp' >> /etc/modprobe.d/sctp.conf
+    modprobe -r sctp (if currently loaded)
+
+---
+CIS Section: 3.3.3 – Disable rds
+Audit Commands:
+  modprobe -n -v rds
+  lsmod | grep rds
+  grep -r '^blacklist rds' /etc/modprobe.d/
+
+Rationale:
+Disabling unused or insecure protocols like rds reduces kernel attack surface and limits risk exposure.
+
+Current Value:
+  Module is loadable ()
+  Module is not currently loaded
+  Module is not blacklisted
+
+Best Practice Value:
+  The rds module should not be loadable, not currently loaded, and should be blacklisted.
+
+Audit Result: **FAIL**
+
+Recommendation:
+  To disable rds, run the following commands:
+    echo 'install rds /bin/true' >> /etc/modprobe.d/rds.conf
+    echo 'blacklist rds' >> /etc/modprobe.d/rds.conf
+    modprobe -r rds (if currently loaded)
+
+---
+CIS Section: 3.3.4 – Disable tipc
+Audit Commands:
+  modprobe -n -v tipc
+  lsmod | grep tipc
+  grep -r '^blacklist tipc' /etc/modprobe.d/
+
+Rationale:
+Disabling unused or insecure protocols like tipc reduces kernel attack surface and limits risk exposure.
+
+Current Value:
+  Module is loadable (insmod /lib/modules/6.8.0-1029-azure/kernel/net/tipc/tipc.ko )
+  Module is not currently loaded
+  Module is not blacklisted
+
+Best Practice Value:
+  The tipc module should not be loadable, not currently loaded, and should be blacklisted.
+
+Audit Result: **FAIL**
+
+Recommendation:
+  To disable tipc, run the following commands:
+    echo 'install tipc /bin/true' >> /etc/modprobe.d/tipc.conf
+    echo 'blacklist tipc' >> /etc/modprobe.d/tipc.conf
+    modprobe -r tipc (if currently loaded)
+
+---
+CIS Section: 3.3.5 – Disable bluetooth
+Audit Commands:
+  modprobe -n -v bluetooth
+  lsmod | grep bluetooth
+  grep -r '^blacklist bluetooth' /etc/modprobe.d/
+
+Rationale:
+Disabling unused or insecure protocols like bluetooth reduces kernel attack surface and limits risk exposure.
+
+Current Value:
+  Module is loadable ()
+  Module is not currently loaded
+  Module is not blacklisted
+
+Best Practice Value:
+  The bluetooth module should not be loadable, not currently loaded, and should be blacklisted.
+
+Audit Result: **FAIL**
+
+Recommendation:
+  To disable bluetooth, run the following commands:
+    echo 'install bluetooth /bin/true' >> /etc/modprobe.d/bluetooth.conf
+    echo 'blacklist bluetooth' >> /etc/modprobe.d/bluetooth.conf
+    modprobe -r bluetooth (if currently loaded)
+
+---
+CIS Section: 3.3.6 – Disable usb-storage
+Audit Commands:
+  modprobe -n -v usb-storage
+  lsmod | grep usb-storage
+  grep -r '^blacklist usb-storage' /etc/modprobe.d/
+
+Rationale:
+Disabling unused or insecure protocols like usb-storage reduces kernel attack surface and limits risk exposure.
+
+Current Value:
+  Module is loadable ()
+  Module is not currently loaded
+  Module is not blacklisted
+
+Best Practice Value:
+  The usb-storage module should not be loadable, not currently loaded, and should be blacklisted.
+
+Audit Result: **FAIL**
+
+Recommendation:
+  To disable usb-storage, run the following commands:
+    echo 'install usb-storage /bin/true' >> /etc/modprobe.d/usb-storage.conf
+    echo 'blacklist usb-storage' >> /etc/modprobe.d/usb-storage.conf
+    modprobe -r usb-storage (if currently loaded)
+
+---
+CIS Section: 3.3.7 – Disable firewire-core
+Audit Commands:
+  modprobe -n -v firewire-core
+  lsmod | grep firewire-core
+  grep -r '^blacklist firewire-core' /etc/modprobe.d/
+
+Rationale:
+Disabling unused or insecure protocols like firewire-core reduces kernel attack surface and limits risk exposure.
+
+Current Value:
+  Module is loadable ()
+  Module is not currently loaded
+  Module is not blacklisted
+
+Best Practice Value:
+  The firewire-core module should not be loadable, not currently loaded, and should be blacklisted.
+
+Audit Result: **FAIL**
+
+Recommendation:
+  To disable firewire-core, run the following commands:
+    echo 'install firewire-core /bin/true' >> /etc/modprobe.d/firewire-core.conf
+    echo 'blacklist firewire-core' >> /etc/modprobe.d/firewire-core.conf
+    modprobe -r firewire-core (if currently loaded)
+
+---
+CIS Section: 3.3.8 – Disable thunderbolt
+Audit Commands:
+  modprobe -n -v thunderbolt
+  lsmod | grep thunderbolt
+  grep -r '^blacklist thunderbolt' /etc/modprobe.d/
+
+Rationale:
+Disabling unused or insecure protocols like thunderbolt reduces kernel attack surface and limits risk exposure.
+
+Current Value:
+  Module is loadable ()
+  Module is not currently loaded
+  Module is not blacklisted
+
+Best Practice Value:
+  The thunderbolt module should not be loadable, not currently loaded, and should be blacklisted.
+
+Audit Result: **FAIL**
+
+Recommendation:
+  To disable thunderbolt, run the following commands:
+    echo 'install thunderbolt /bin/true' >> /etc/modprobe.d/thunderbolt.conf
+    echo 'blacklist thunderbolt' >> /etc/modprobe.d/thunderbolt.conf
+    modprobe -r thunderbolt (if currently loaded)
+
+---
+CIS Section: 3.3.9 – Disable hci
+Audit Commands:
+  modprobe -n -v hci
+  lsmod | grep hci
+  grep -r '^blacklist hci' /etc/modprobe.d/
+
+Rationale:
+Disabling unused or insecure protocols like hci reduces kernel attack surface and limits risk exposure.
+
+Current Value:
+  Module is loadable ()
+  Module is not currently loaded
+  Module is not blacklisted
+
+Best Practice Value:
+  The hci module should not be loadable, not currently loaded, and should be blacklisted.
+
+Audit Result: **FAIL**
+
+Recommendation:
+  To disable hci, run the following commands:
+    echo 'install hci /bin/true' >> /etc/modprobe.d/hci.conf
+    echo 'blacklist hci' >> /etc/modprobe.d/hci.conf
+    modprobe -r hci (if currently loaded)
+
+---
+CIS Section: 3.3.10 – Disable hdlc
+Audit Commands:
+  modprobe -n -v hdlc
+  lsmod | grep hdlc
+  grep -r '^blacklist hdlc' /etc/modprobe.d/
+
+Rationale:
+Disabling unused or insecure protocols like hdlc reduces kernel attack surface and limits risk exposure.
+
+Current Value:
+  Module is loadable ()
+  Module is not currently loaded
+  Module is not blacklisted
+
+Best Practice Value:
+  The hdlc module should not be loadable, not currently loaded, and should be blacklisted.
+
+Audit Result: **FAIL**
+
+Recommendation:
+  To disable hdlc, run the following commands:
+    echo 'install hdlc /bin/true' >> /etc/modprobe.d/hdlc.conf
+    echo 'blacklist hdlc' >> /etc/modprobe.d/hdlc.conf
+    modprobe -r hdlc (if currently loaded)
+
+---
+CIS Section: 3.3.11 – Disable x25
+Audit Commands:
+  modprobe -n -v x25
+  lsmod | grep x25
+  grep -r '^blacklist x25' /etc/modprobe.d/
+
+Rationale:
+Disabling unused or insecure protocols like x25 reduces kernel attack surface and limits risk exposure.
+
+Current Value:
+  Module is loadable (insmod /lib/modules/6.8.0-1029-azure/kernel/net/x25/x25.ko )
+  Module is not currently loaded
+  Module is not blacklisted
+
+Best Practice Value:
+  The x25 module should not be loadable, not currently loaded, and should be blacklisted.
+
+Audit Result: **FAIL**
+
+Recommendation:
+  To disable x25, run the following commands:
+    echo 'install x25 /bin/true' >> /etc/modprobe.d/x25.conf
+    echo 'blacklist x25' >> /etc/modprobe.d/x25.conf
+    modprobe -r x25 (if currently loaded)
+
+---
+CIS Section:  – Disable ax25
+Audit Commands:
+  modprobe -n -v ax25
+  lsmod | grep ax25
+  grep -r '^blacklist ax25' /etc/modprobe.d/
+
+Rationale:
+Disabling unused or insecure protocols like ax25 reduces kernel attack surface and limits risk exposure.
+
+Current Value:
+  Module is loadable (insmod /lib/modules/6.8.0-1029-azure/kernel/net/ax25/ax25.ko )
+  Module is not currently loaded
+  Module is not blacklisted
+
+Best Practice Value:
+  The ax25 module should not be loadable, not currently loaded, and should be blacklisted.
+
+Audit Result: **FAIL**
+
+Recommendation:
+  To disable ax25, run the following commands:
+    echo 'install ax25 /bin/true' >> /etc/modprobe.d/ax25.conf
+    echo 'blacklist ax25' >> /etc/modprobe.d/ax25.conf
+    modprobe -r ax25 (if currently loaded)
+
+---
+CIS Section:  – Disable netrom
+Audit Commands:
+  modprobe -n -v netrom
+  lsmod | grep netrom
+  grep -r '^blacklist netrom' /etc/modprobe.d/
+
+Rationale:
+Disabling unused or insecure protocols like netrom reduces kernel attack surface and limits risk exposure.
+
+Current Value:
+  Module is loadable (insmod /lib/modules/6.8.0-1029-azure/kernel/net/ax25/ax25.ko 
+insmod /lib/modules/6.8.0-1029-azure/kernel/net/netrom/netrom.ko )
+  Module is not currently loaded
+  Module is not blacklisted
+
+Best Practice Value:
+  The netrom module should not be loadable, not currently loaded, and should be blacklisted.
+
+Audit Result: **FAIL**
+
+Recommendation:
+  To disable netrom, run the following commands:
+    echo 'install netrom /bin/true' >> /etc/modprobe.d/netrom.conf
+    echo 'blacklist netrom' >> /etc/modprobe.d/netrom.conf
+    modprobe -r netrom (if currently loaded)
+
+Audit complete. Output saved to /home/azureuser/SEND_TO_MAOR2/disable_unused_protocols.txt

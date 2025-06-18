@@ -1,0 +1,8 @@
+# =============================
+# CIS Section 2.4.2.1 – Ensure 'at' is restricted to authorized users
+# =============================
+
+Rationale:
+Restricting 'at' limits unauthorized job scheduling, reducing abuse risk.
+
+'at' not installed. Skipping check.

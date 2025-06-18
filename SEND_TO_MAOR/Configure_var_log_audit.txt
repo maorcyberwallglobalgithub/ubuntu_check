@@ -1,0 +1,61 @@
+Starting /var/log/audit checks...
+CIS Section: 1.1.2.7.1 – Ensure /var/log/audit is a separate partition
+
+Current State:
+No /var/log/audit partition found
+
+Hardened State:
+/var/log/audit should be a separate mount using its own partition
+
+Audit Result: **FAIL**
+
+Rationale:
+Since the /var/log/audit directory contains audit logs which can grow significantly, configuring it on a separate partition helps avoid resource exhaustion and allows security-restrictive mount options such as nodev, nosuid, and noexec.
+
+---
+
+CIS Section: 1.1.2.7.2 – Ensure nodev option set on /var/log/audit partition
+
+Current State:
+Not mounted or no output returned
+
+Hardened State:
+/var/log/audit should be mounted with nodev enabled
+
+Audit Result: **PASS**
+
+Rationale:
+Since /var/log/audit is not intended to support device files, the nodev option should be set to prevent creation of such devices.
+
+---
+
+CIS Section: 1.1.2.7.3 – Ensure nosuid option set on /var/log/audit partition
+
+Current State:
+Not mounted or no output returned
+
+Hardened State:
+/var/log/audit should be mounted with nosuid enabled
+
+Audit Result: **PASS**
+
+Rationale:
+The nosuid option ensures users cannot create setuid files within /var/log/audit, reducing the risk of privilege escalation.
+
+---
+
+CIS Section: 1.1.2.7.4 – Ensure noexec option set on /var/log/audit partition
+
+Current State:
+Not mounted or no output returned
+
+Hardened State:
+/var/log/audit should be mounted with noexec enabled
+
+Audit Result: **PASS**
+
+Rationale:
+Setting the noexec option on /var/log/audit ensures that executables cannot be run from this log directory, reducing exploitability.
+
+---
+

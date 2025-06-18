@@ -1,0 +1,78 @@
+# =============================
+# CIS Section 6.2.1.2 - Configure systemd-journal-remote
+# =============================
+
+---
+6.2.1.2.1 Ensure systemd-journal-remote is installed
+---
+
+Description:
+Verify systemd-journal-remote is installed.
+
+Rationale:
+Remote log storage protects logs from local tampering.
+
+Expected State:
+systemd-journal-remote should be installed.
+
+Current State:
+systemd-journal-remote is NOT installed
+
+Audit Result:
+FAIL
+
+Remediation:
+Run: apt install systemd-journal-remote
+
+---
+
+
+---
+6.2.1.2.3 Ensure systemd-journal-upload is enabled and active
+---
+
+Description:
+Ensure systemd-journal-upload is enabled and active
+
+Rationale:
+Active log upload service ensures forwarding logs to remote host
+
+Expected State:
+systemd-journal-upload should be enabled and active
+
+Current State:
+Enabled: , Active: inactive
+
+Audit Result:
+FAIL
+
+Remediation:
+Run: systemctl unmask systemd-journal-upload && systemctl --now enable systemd-journal-upload
+
+---
+
+
+---
+6.2.1.2.4 Ensure systemd-journal-remote service is not in use
+---
+
+Description:
+Ensure systemd-journal-remote is NOT enabled or active
+
+Rationale:
+Clients should not be configured to receive logs
+
+Expected State:
+systemd-journal-remote.service and .socket should be disabled/inactive
+
+Current State:
+systemd-journal-remote.socket and service are not enabled or active
+
+Audit Result:
+PASS
+
+Remediation:
+Run: systemctl stop systemd-journal-remote.socket systemd-journal-remote.service && systemctl mask systemd-journal-remote.socket systemd-journal-remote.service
+
+---
+

@@ -1,0 +1,162 @@
+===============================
+Section 6.3.4.1 - Audit Log Files Mode
+===============================
+
+- Audit Result:
+ ** FAIL **
+ - File: "/etc/audit/auditd.conf" not found.
+===============================
+Section 6.3.4.2 - Audit Log Files Owner
+===============================
+===============================
+Section 6.3.4.3 - Audit Log Files Group Owner
+===============================
+===============================
+Section 6.3.4.4 - Audit Log Directory Mode
+===============================
+===============================
+Section 6.3.4.5 - Audit Config Files Mode
+===============================
+find: ‘/etc/audit/’: No such file or directory
+===============================
+Section 6.3.4.6 - Audit Config Files Owner
+===============================
+find: ‘/etc/audit/’: No such file or directory
+===============================
+Section 6.3.4.7 - Audit Config Files Group Owner
+===============================
+find: ‘/etc/audit/’: No such file or directory
+===============================
+Section 6.3.4.8 - Audit Tools Mode
+===============================
+stat: cannot statx '/sbin/auditctl': No such file or directory
+./new_script3.sh: line 1653: & 0022 : syntax error: operand expected (error token is "& 0022 ")
+===============================
+Section 6.3.4.9 - Audit Tools Owner
+===============================
+stat: cannot statx '/sbin/auditctl': No such file or directory
+stat: cannot statx '/sbin/aureport': No such file or directory
+stat: cannot statx '/sbin/ausearch': No such file or directory
+stat: cannot statx '/sbin/autrace': No such file or directory
+stat: cannot statx '/sbin/auditd': No such file or directory
+stat: cannot statx '/sbin/augenrules': No such file or directory
+===============================
+Section 6.3.4.10 - Audit Tools Group Owner
+===============================
+stat: cannot statx '/sbin/auditctl': No such file or directory
+stat: cannot statx '/sbin/aureport': No such file or directory
+stat: cannot statx '/sbin/ausearch': No such file or directory
+stat: cannot statx '/sbin/autrace': No such file or directory
+stat: cannot statx '/sbin/auditd': No such file or directory
+stat: cannot statx '/sbin/augenrules': No such file or directory
+awk: fatal: cannot open file `/etc/shadow' for reading: Permission denied
+awk: cmd. line:1: ($4 == "$(getent group shadow | awk -F: {print
+awk: cmd. line:1:        ^ unterminated string
+awk: cmd. line:1: ($4 == "$(getent group shadow | awk -F: {print
+awk: cmd. line:1:        ^ syntax error
+ls: cannot access '{/home/azureuser/myagent/.env}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/.path}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/.credentials}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/.agent}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/5/s/wp-content/themes/moveo-theme/acf-json/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/5/s/wp-content/themes/moveo-theme/global/acf-blocks/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/5/s/wp-content/themes/moveo-theme/global/assets/icon/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/5/s/wp-content/themes/moveo-theme/global/assets/json/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/5/s/wp-content/themes/moveo-theme/global/assets/lottie/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/5/s/wp-content/themes/moveo-theme/global/assets/img/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/5/s/wp-content/themes/moveo-theme/global/page-templates/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/5/s/wp-content/themes/moveo-theme/global/template-parts/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/5/s/wp-content/themes/moveo-theme/features/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/5/s/wp-content/plugins/w3-total-cache/vendor/aws/aws-php-sns-message-validator/.travis.yml}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/9/s/wp-content/themes/moveo-theme/acf-json/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/9/s/wp-content/themes/moveo-theme/global/acf-blocks/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/9/s/wp-content/themes/moveo-theme/global/assets/icon/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/9/s/wp-content/themes/moveo-theme/global/assets/json/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/9/s/wp-content/themes/moveo-theme/global/assets/lottie/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/9/s/wp-content/themes/moveo-theme/global/assets/img/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/9/s/wp-content/themes/moveo-theme/global/page-templates/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/9/s/wp-content/themes/moveo-theme/global/template-parts/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/9/s/wp-content/themes/moveo-theme/features/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/3/s/wp-content/themes/moveo-theme/acf-json/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/3/s/wp-content/themes/moveo-theme/global/acf-blocks/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/3/s/wp-content/themes/moveo-theme/global/assets/icon/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/3/s/wp-content/themes/moveo-theme/global/assets/json/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/3/s/wp-content/themes/moveo-theme/global/assets/lottie/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/3/s/wp-content/themes/moveo-theme/global/assets/img/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/3/s/wp-content/themes/moveo-theme/global/page-templates/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/3/s/wp-content/themes/moveo-theme/global/template-parts/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/3/s/wp-content/themes/moveo-theme/features/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/7/s/wp-content/themes/moveo-theme/acf-json/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/7/s/wp-content/themes/moveo-theme/global/acf-blocks/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/7/s/wp-content/themes/moveo-theme/global/assets/icon/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/7/s/wp-content/themes/moveo-theme/global/assets/json/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/7/s/wp-content/themes/moveo-theme/global/assets/lottie/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/7/s/wp-content/themes/moveo-theme/global/assets/img/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/7/s/wp-content/themes/moveo-theme/global/page-templates/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/7/s/wp-content/themes/moveo-theme/global/template-parts/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/7/s/wp-content/themes/moveo-theme/features/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/8/s/wp-content/themes/moveo-theme/acf-json/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/8/s/wp-content/themes/moveo-theme/global/acf-blocks/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/8/s/wp-content/themes/moveo-theme/global/assets/icon/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/8/s/wp-content/themes/moveo-theme/global/assets/json/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/8/s/wp-content/themes/moveo-theme/global/assets/lottie/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/8/s/wp-content/themes/moveo-theme/global/assets/img/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/8/s/wp-content/themes/moveo-theme/global/page-templates/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/8/s/wp-content/themes/moveo-theme/global/template-parts/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/8/s/wp-content/themes/moveo-theme/features/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/6/s/wp-content/themes/moveo-theme/acf-json/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/6/s/wp-content/themes/moveo-theme/global/acf-blocks/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/6/s/wp-content/themes/moveo-theme/global/assets/icon/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/6/s/wp-content/themes/moveo-theme/global/assets/json/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/6/s/wp-content/themes/moveo-theme/global/assets/lottie/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/6/s/wp-content/themes/moveo-theme/global/assets/img/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/6/s/wp-content/themes/moveo-theme/global/page-templates/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/6/s/wp-content/themes/moveo-theme/global/template-parts/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/6/s/wp-content/themes/moveo-theme/features/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/10/s/wp-content/themes/moveo-theme/acf-json/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/10/s/wp-content/themes/moveo-theme/global/acf-blocks/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/10/s/wp-content/themes/moveo-theme/global/assets/icon/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/10/s/wp-content/themes/moveo-theme/global/assets/json/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/10/s/wp-content/themes/moveo-theme/global/assets/lottie/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/10/s/wp-content/themes/moveo-theme/global/assets/img/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/10/s/wp-content/themes/moveo-theme/global/page-templates/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/10/s/wp-content/themes/moveo-theme/global/template-parts/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/10/s/wp-content/themes/moveo-theme/features/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/1/s/wp-content/themes/moveo-theme/acf-json/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/1/s/wp-content/themes/moveo-theme/global/acf-blocks/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/1/s/wp-content/themes/moveo-theme/global/assets/icon/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/1/s/wp-content/themes/moveo-theme/global/assets/json/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/1/s/wp-content/themes/moveo-theme/global/assets/lottie/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/1/s/wp-content/themes/moveo-theme/global/assets/img/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/1/s/wp-content/themes/moveo-theme/global/page-templates/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/1/s/wp-content/themes/moveo-theme/global/template-parts/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/1/s/wp-content/themes/moveo-theme/features/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/2/a/validation/wp-content/themes/moveo-theme/acf-json/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/2/a/validation/wp-content/themes/moveo-theme/global/acf-blocks/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/2/a/validation/wp-content/themes/moveo-theme/global/assets/icon/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/2/a/validation/wp-content/themes/moveo-theme/global/assets/json/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/2/a/validation/wp-content/themes/moveo-theme/global/assets/lottie/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/2/a/validation/wp-content/themes/moveo-theme/global/assets/img/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/2/a/validation/wp-content/themes/moveo-theme/global/page-templates/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/2/a/validation/wp-content/themes/moveo-theme/global/template-parts/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/2/a/validation/wp-content/themes/moveo-theme/features/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/2/s/wp-content/themes/moveo-theme/acf-json/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/2/s/wp-content/themes/moveo-theme/global/acf-blocks/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/2/s/wp-content/themes/moveo-theme/global/assets/icon/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/2/s/wp-content/themes/moveo-theme/global/assets/json/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/2/s/wp-content/themes/moveo-theme/global/assets/lottie/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/2/s/wp-content/themes/moveo-theme/global/assets/img/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/2/s/wp-content/themes/moveo-theme/global/page-templates/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/2/s/wp-content/themes/moveo-theme/global/template-parts/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/2/s/wp-content/themes/moveo-theme/features/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/4/s/wp-content/themes/moveo-theme/acf-json/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/4/s/wp-content/themes/moveo-theme/global/acf-blocks/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/4/s/wp-content/themes/moveo-theme/global/assets/icon/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/4/s/wp-content/themes/moveo-theme/global/assets/json/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/4/s/wp-content/themes/moveo-theme/global/assets/lottie/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/4/s/wp-content/themes/moveo-theme/global/assets/img/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/4/s/wp-content/themes/moveo-theme/global/page-templates/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/4/s/wp-content/themes/moveo-theme/global/template-parts/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/4/s/wp-content/themes/moveo-theme/features/.gitkeep}': No such file or directory
+ls: cannot access '{/home/azureuser/myagent/_work/4/s/wp-content/plugins/w3-total-cache/vendor/aws/aws-php-sns-message-validator/.travis.yml}': No such file or directory
+find: ‘/home/azureagent’: Permission denied

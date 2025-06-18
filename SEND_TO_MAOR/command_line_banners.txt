@@ -1,0 +1,68 @@
+
+---
+CIS Section: 1.6.1 – Ensure /etc/motd is configured properly
+---
+
+Rationale:
+Login banners must inform users of authorized access only and avoid exposing OS information.
+
+Current State of /etc/motd:
+File is empty or not found.
+Audit Result: **PASS** – /etc/motd does not expose OS details.
+
+
+---
+CIS Section: 1.6.2 – Ensure /etc/issue is configured properly
+---
+
+Rationale:
+Local login banners must warn users and not reveal system details to potential attackers.
+
+Current State of /etc/issue:
+Ubuntu 22.04.5 LTS \n \l
+Audit Result: **FAIL** – /etc/issue contains OS-identifying information.
+
+
+---
+CIS Section: 1.6.3 – Ensure /etc/issue.net is configured properly
+---
+
+Rationale:
+Remote login banners should not leak OS or architecture data and must include legal warning.
+
+Current State of /etc/issue.net:
+Ubuntu 22.04.5 LTS
+Audit Result: **FAIL** – /etc/issue.net contains OS-identifying information.
+
+
+---
+CIS Section: 1.6.4 – Ensure access to /etc/motd is configured
+---
+
+Rationale:
+If motd can be modified by unauthorized users, it can mislead or expose sensitive system context.
+
+Current State of /etc/motd: File not found.
+
+Audit Result: **PASS** – /etc/motd not present.
+
+
+---
+CIS Section: 1.6.5 – Ensure access to /etc/issue is configured
+---
+
+Rationale:
+Ensure that the local login banner cannot be tampered with by non-privileged users.
+
+Current State of /etc/issue permissions:
+Access: (0644/-rw-r--r--) Uid: (0/root) Gid: (0/root)
+
+---
+CIS Section: 1.6.6 – Ensure access to /etc/issue.net is configured
+---
+
+Rationale:
+Remote banner should not be editable by unprivileged users to prevent misleading or leaking content.
+
+Current State of /etc/issue.net permissions:
+Access: (0644/-rw-r--r--) Uid: (0/root) Gid: (0/root)

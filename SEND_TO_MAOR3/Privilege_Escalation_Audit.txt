@@ -1,0 +1,133 @@
+# Privilege Escalation Audit - CIS Section 5.2
+
+
+# ======================================
+# CIS Section: 5.2.1 Ensure sudo is installed
+# ======================================
+
+Current State:
+sudo is installed
+sudo-ldap is installed
+
+Expected Value / Best Practice:
+sudo is installed|sudo-ldap is installed
+
+Rationale:
+sudo enables granular control of privileged commands and auditing.
+
+Recommendation:
+Install sudo using: apt install sudo
+
+Audit Result: PASS
+
+# ======================================
+# CIS Section: 5.2.2 Ensure sudo commands use pty
+# ======================================
+
+Current State:
+grep: /etc/sudoers: Permission denied
+grep: /etc/sudoers.d: Permission denied
+
+Expected Value / Best Practice:
+Defaults use_pty
+
+Rationale:
+Using pty prevents background process abuse with sudo.
+
+Recommendation:
+Edit sudoers with visudo and add: Defaults use_pty
+
+Audit Result: FAIL
+
+# ======================================
+# CIS Section: 5.2.3 Ensure sudo log file exists
+# ======================================
+
+Current State:
+(No output from command)
+
+Expected Value / Best Practice:
+/var/log/sudo.log
+
+Rationale:
+Logging sudo commands supports better auditing and forensics.
+
+Recommendation:
+Add Defaults logfile="/var/log/sudo.log" to sudoers with visudo
+
+Audit Result: FAIL
+
+# ======================================
+# CIS Section: 5.2.4 Ensure users must provide password for privilege escalation
+# ======================================
+
+Current State:
+grep: /etc/sudoers: Permission denied
+grep: /etc/sudoers.d: Permission denied
+
+Expected Value / Best Practice:
+^$
+
+Rationale:
+Preventing passwordless sudo reduces unauthorized escalation risk.
+
+Recommendation:
+Remove NOPASSWD tags from all sudoers files using visudo
+
+Audit Result: FAIL
+
+# ======================================
+# CIS Section: 5.2.5 Ensure re-authentication is not disabled
+# ======================================
+
+Current State:
+grep: /etc/sudoers: Permission denied
+grep: /etc/sudoers.d: Permission denied
+
+Expected Value / Best Practice:
+^$
+
+Rationale:
+Ensure re-authentication is required for sudo privilege elevation.
+
+Recommendation:
+Remove any !authenticate directives from sudoers files
+
+Audit Result: FAIL
+
+# ======================================
+# CIS Section: 5.2.6 Ensure sudo authentication timeout is <= 15
+# ======================================
+
+Current State:
+grep: /etc/sudoers: Permission denied
+grep: /etc/sudoers.d: Permission denied
+
+Expected Value / Best Practice:
+^([0-9]|1[0-5])$
+
+Rationale:
+Limit sudo credential caching to max 15 minutes.
+
+Recommendation:
+Set timestamp_timeout=15 in sudoers using visudo
+
+Audit Result: FAIL
+
+# ======================================
+# CIS Section: 5.2.7 Ensure access to su is restricted
+# ======================================
+
+Current State:
+(No output from command)
+
+Expected Value / Best Practice:
+pam_wheel.so.*use_uid.*group=
+
+Rationale:
+Restricting su to specific group improves control and auditing.
+
+Recommendation:
+Edit /etc/pam.d/su to include: auth required pam_wheel.so use_uid group=sugroup
+
+Audit Result: FAIL

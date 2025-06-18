@@ -1,0 +1,182 @@
+# CIS Section 6.2.2.1 - Ensure access to all logfiles has been configured
+# -----------------------------------------------------------
+Description: Log files must have appropriate ownership and permissions to ensure confidentiality and integrity.
+Expected Value: /var/log/* files should be owned by root or syslog and be group-owned by adm, utmp, etc. Permissions should be strict (0640 or stricter).
+Rationale: Protects log integrity and confidentiality from unauthorized access or tampering.
+-------------------------------------------
+
+Audit Result: FAIL
+
+ - File: "/var/log/ubuntu-advantage-apt-hook.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/apt/history.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/apt/eipp.log.xz" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/apt/history.log.1.gz" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/alternatives.log.1" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/alternatives.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/waagent.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/landscape/sysinfo.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/2025-06-09_21-16-31_Enable.ext.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/2025-06-09_19-46-34_Enable.ext.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/2025-06-18_10-34-49_Enable.ext.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/2025-06-17_12-25-04_Enable.ext.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/2025-06-12_19-16-35_Enable.ext.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/0.core.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/3.aa.core.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/1.core.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/2.aa.core.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/2025-06-13_21-21-25_Enable.ext.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/4.core.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/2025-06-16_21-21-13_Enable.ext.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/2025-06-09_19-46-32_Install.ext.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/2.core.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/3.core.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/CommandExecution.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/2025-06-12_12-33-46_Enable.ext.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/2025-06-13_21-08-51_Enable.ext.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/4.aa.core.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/0.aa.core.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/1.aa.core.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/azure/Microsoft.OSTCExtensions.VMAccessForLinux/extension.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/azure/Microsoft.OSTCExtensions.VMAccessForLinux/CommandExecution.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/unattended-upgrades/unattended-upgrades-dpkg.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/unattended-upgrades/unattended-upgrades.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/unattended-upgrades/unattended-upgrades.log.1.gz" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/unattended-upgrades/unattended-upgrades-shutdown.log.1.gz" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/unattended-upgrades/unattended-upgrades-dpkg.log.1.gz" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/unattended-upgrades/unattended-upgrades-shutdown.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/dpkg.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/dpkg.log.1" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/fontconfig.log" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/sysstat/sa13" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/sysstat/sar16" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/sysstat/sa14" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/sysstat/sa12" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/sysstat/sar12" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/sysstat/sar15" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/sysstat/sar17" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/sysstat/sar10" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/sysstat/sa16" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/sysstat/sar14" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/sysstat/sar11" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/sysstat/sa18" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/sysstat/sar13" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/sysstat/sa17" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/sysstat/sa11" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/sysstat/sa10" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+ - File: "/var/log/sysstat/sa15" is:
+ - Mode: "0644" should be "0640" or more restrictive
+
+
+Recommendation: Run the remediation script provided by CIS or correct permissions and ownership as per policy.

@@ -1,0 +1,18 @@
+# =============================
+# CIS Section 2.3.1.1 - Time Synchronization - Audit
+# =============================
+
+Rationale:
+Ensures consistency of logs and time-based security mechanisms.
+
+Current State:
+- systemd-timesyncd is NOT enabled
+- systemd-timesyncd is NOT active
+- chrony is ENABLED
+- chrony is ACTIVE
+
+
+Best Practice / Expected Value:
+Only one time daemon should be active.
+
+Audit Result: **PASS**

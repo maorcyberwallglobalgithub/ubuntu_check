@@ -1,0 +1,58 @@
+# PAM Modules Audit - CIS Section 5.3
+
+
+# ======================================
+# CIS Section: 5.3.1.1 Ensure latest version of libpam-runtime is installed
+# ======================================
+
+Current State:
+Status: install ok installed
+Version: 1.4.0-11ubuntu2.5
+
+Expected Value / Best Practice:
+libpam-runtime >= 1.5.2-6
+
+Rationale:
+Updated versions of PAM include necessary security and functionality improvements.
+
+Recommendation:
+Run: apt upgrade libpam-runtime
+
+Audit Result: FAIL
+
+# ======================================
+# CIS Section: 5.3.1.2 Ensure libpam-modules is installed
+# ======================================
+
+Current State:
+Status: install ok installed
+Version: 1.4.0-11ubuntu2.5
+
+Expected Value / Best Practice:
+libpam-modules >= 1.5.2-6
+
+Rationale:
+libpam-modules provides essential functionality for PAM authentication.
+
+Recommendation:
+Run: apt upgrade libpam-modules
+
+Audit Result: FAIL
+
+# ======================================
+# CIS Section: 5.3.1.3 Ensure libpam-pwquality is installed
+# ======================================
+
+Current State:
+
+
+Expected Value / Best Practice:
+libpam-pwquality >= 1.4.4-1
+
+Rationale:
+libpam-pwquality enforces strong password policies to resist brute force attacks.
+
+Recommendation:
+Run: apt install libpam-pwquality
+
+Audit Result: FAIL

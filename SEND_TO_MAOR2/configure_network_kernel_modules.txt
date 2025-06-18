@@ -1,0 +1,176 @@
+
+============================================
+CIS Section 3.2 - dccp Kernel Module
+============================================
+
+
+
+ -- INFO --
+ - module: "dccp" exists in:
+ - "/lib/modules/6.8.0-1028-azure/kernel/net"
+ - "/lib/modules/6.8.0-1029-azure/kernel/net"
+
+- Audit Result:
+ ** FAIL **
+ - Reason(s) for audit failure:
+
+ - module: "dccp" is not deny listed
+ - module: "dccp" is loadable: "insmod /lib/modules/6.8.0-1029-azure/kernel/net/dccp/dccp.ko "
+
+
+- Correctly set:
+
+ - module: "dccp" is not loaded
+
+
+============================================
+CIS Section 3.2 - tipc Kernel Module
+============================================
+
+
+
+ -- INFO --
+ - module: "tipc" exists in:
+ - "/lib/modules/6.8.0-1028-azure/kernel/net"
+ - "/lib/modules/6.8.0-1029-azure/kernel/net"
+
+- Audit Result:
+ ** FAIL **
+ - Reason(s) for audit failure:
+
+ - module: "tipc" is not deny listed
+ - module: "tipc" is loadable: "insmod /lib/modules/6.8.0-1029-azure/kernel/net/tipc/tipc.ko "
+
+
+- Correctly set:
+
+ - module: "tipc" is not loaded
+
+
+============================================
+CIS Section 3.2 - rds Kernel Module
+============================================
+
+
+
+ -- INFO --
+ - module: "rds" exists in:
+
+- Audit Result:
+ ** PASS **
+
+ - module: "rds" doesn't exist in "/lib/modules/6.8.0-1028-azure/kernel/net"
+ - module: "rds" doesn't exist in "/lib/modules/6.8.0-1029-azure/kernel/net"
+
+
+============================================
+CIS Section 3.2 - sctp Kernel Module
+============================================
+
+
+
+ -- INFO --
+ - module: "sctp" exists in:
+ - "/lib/modules/6.8.0-1028-azure/kernel/net"
+ - "/lib/modules/6.8.0-1029-azure/kernel/net"
+
+- Audit Result:
+ ** FAIL **
+ - Reason(s) for audit failure:
+
+ - module: "sctp" is not deny listed
+ - module: "sctp" is loadable: "insmod /lib/modules/6.8.0-1029-azure/kernel/net/sctp/sctp.ko "
+
+
+- Correctly set:
+
+ - module: "sctp" is not loaded
+
+
+============================================
+CIS Section 3.2 - dccp Kernel Module
+============================================
+
+
+
+ -- INFO --
+ - module: "dccp" exists in:
+ - "/lib/modules/6.8.0-1028-azure/kernel/net"
+ - "/lib/modules/6.8.0-1029-azure/kernel/net"
+
+- Audit Result:
+ ** FAIL **
+ - Reason(s) for audit failure:
+
+ - module: "dccp" is not deny listed
+ - module: "dccp" is loadable: "insmod /lib/modules/6.8.0-1029-azure/kernel/net/dccp/dccp.ko "
+
+
+- Correctly set:
+
+ - module: "dccp" is not loaded
+
+
+============================================
+CIS Section 3.2 - tipc Kernel Module
+============================================
+
+
+
+ -- INFO --
+ - module: "tipc" exists in:
+ - "/lib/modules/6.8.0-1028-azure/kernel/net"
+ - "/lib/modules/6.8.0-1029-azure/kernel/net"
+
+- Audit Result:
+ ** FAIL **
+ - Reason(s) for audit failure:
+
+ - module: "tipc" is not deny listed
+ - module: "tipc" is loadable: "insmod /lib/modules/6.8.0-1029-azure/kernel/net/tipc/tipc.ko "
+
+
+- Correctly set:
+
+ - module: "tipc" is not loaded
+
+
+============================================
+CIS Section 3.2 - rds Kernel Module
+============================================
+
+
+
+ -- INFO --
+ - module: "rds" exists in:
+
+- Audit Result:
+ ** PASS **
+
+ - module: "rds" doesn't exist in "/lib/modules/6.8.0-1028-azure/kernel/net"
+ - module: "rds" doesn't exist in "/lib/modules/6.8.0-1029-azure/kernel/net"
+
+
+============================================
+CIS Section 3.2 - sctp Kernel Module
+============================================
+
+
+
+ -- INFO --
+ - module: "sctp" exists in:
+ - "/lib/modules/6.8.0-1028-azure/kernel/net"
+ - "/lib/modules/6.8.0-1029-azure/kernel/net"
+
+- Audit Result:
+ ** FAIL **
+ - Reason(s) for audit failure:
+
+ - module: "sctp" is not deny listed
+ - module: "sctp" is loadable: "insmod /lib/modules/6.8.0-1029-azure/kernel/net/sctp/sctp.ko "
+
+
+- Correctly set:
+
+ - module: "sctp" is not loaded
+

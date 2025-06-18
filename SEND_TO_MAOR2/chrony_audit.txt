@@ -1,0 +1,41 @@
+# =============================
+# CIS Section 2.3.3.1 - Ensure chrony is configured with authorized timeserver
+# =============================
+
+Rationale:
+Chrony must be configured with trusted time sources to ensure log and system consistency.
+
+Current State: No time servers configured in /etc/chrony/chrony.conf.
+
+Best Practice / Expected Value:
+Include at least one line: 'server <approved-timeserver> iburst'
+
+Audit Result: **FAIL**
+
+Recommendation: Edit /etc/chrony/chrony.conf and add a valid time server.
+\n---
+CIS Section: 2.3.3.2 – Ensure chrony is running as user _chrony
+
+Rationale:
+Minimizing privileges for chrony limits exposure if compromised.
+
+Current State: chronyd is running as user: _chrony
+
+Best Practice / Expected Value: chronyd should run as user _chrony.
+
+Audit Result: **PASS**
+
+Recommendation: No action needed.
+\n---
+CIS Section: 2.3.3.3 – Ensure chrony is enabled and running
+
+Rationale:
+Ensures consistent timekeeping for logs and security mechanisms.
+
+Current State:
+Enabled: enabled
+Active: active
+
+Audit Result: **PASS**
+
+Recommendation: No action needed.

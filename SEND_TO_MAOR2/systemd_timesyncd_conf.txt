@@ -1,0 +1,31 @@
+# =============================
+# CIS Section 2.3.2.1 & 2.3.2.2 - systemd-timesyncd Configuration
+# =============================
+
+Rationale:
+Ensuring time synchronization uses defined and trusted NTP servers prevents tampering or incorrect logging timestamps. systemd-timesyncd must be configured properly and enabled.
+
+Current State:
+/etc/systemd/timesyncd.conf does not exist.
+
+Best Practice / Expected Value:
+/etc/systemd/timesyncd.conf should exist and define NTP and FallbackNTP values.
+
+Audit Result: **FAIL**
+
+Recommendation:
+Create the file /etc/systemd/timesyncd.conf and define trusted NTP servers in it.
+
+Checking if systemd-timesyncd service is enabled and active...
+
+Current State:
+Enabled: 
+Active: inactive
+
+Best Practice / Expected Value:
+systemd-timesyncd should be enabled and running.
+
+Audit Result: **FAIL**
+
+Recommendation:
+Run the following to enable and start the service:\n  systemctl enable --now systemd-timesyncd.service

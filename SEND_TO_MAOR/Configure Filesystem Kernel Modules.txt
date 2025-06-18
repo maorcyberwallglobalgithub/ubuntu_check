@@ -1,0 +1,121 @@
+CIS Section: 1.1.1.1 – Ensure cramfs kernel module is not available
+
+Current State:
+modprobe: FATAL: Module cramfs not found in directory /lib/modules/6.8.0-1029-azure
+
+Hardened State:
+Module should be disabled using: install cramfs /bin/true
+
+Audit Result: **FAIL**
+
+Rationale:
+Removing support for unneeded filesystem types reduces the local attack surface of the system. If this filesystem type is not needed, disable it.
+
+---
+
+CIS Section: 1.1.1.2 – Ensure freevxfs kernel module is not available
+
+Current State:
+modprobe: FATAL: Module freevxfs not found in directory /lib/modules/6.8.0-1029-azure
+
+Hardened State:
+Module should be disabled using: install freevxfs /bin/true
+
+Audit Result: **FAIL**
+
+Rationale:
+Removing support for unneeded filesystem types reduces the local attack surface of the system. If this filesystem type is not needed, disable it.
+
+---
+
+CIS Section: 1.1.1.3 – Ensure hfs kernel module is not available
+
+Current State:
+modprobe: FATAL: Module hfs not found in directory /lib/modules/6.8.0-1029-azure
+
+Hardened State:
+Module should be disabled using: install hfs /bin/true
+
+Audit Result: **FAIL**
+
+Rationale:
+Removing support for unneeded filesystem types reduces the local attack surface of the system. If this filesystem type is not needed, disable it.
+
+---
+
+CIS Section: 1.1.1.4 – Ensure hfsplus kernel module is not available
+
+Current State:
+modprobe: FATAL: Module hfsplus not found in directory /lib/modules/6.8.0-1029-azure
+
+Hardened State:
+Module should be disabled using: install hfsplus /bin/true
+
+Audit Result: **FAIL**
+
+Rationale:
+Removing support for unneeded filesystem types reduces the local attack surface of the system. If this filesystem type is not needed, disable it.
+
+---
+
+CIS Section: 1.1.1.5 – Ensure jffs2 kernel module is not available
+
+Current State:
+modprobe: FATAL: Module jffs2 not found in directory /lib/modules/6.8.0-1029-azure
+
+Hardened State:
+Module should be disabled using: install jffs2 /bin/true
+
+Audit Result: **FAIL**
+
+Rationale:
+Removing support for unneeded filesystem types reduces the local attack surface of the system. If this filesystem type is not needed, disable it.
+
+---
+
+CIS Section: 1.1.1.6 – Ensure squashfs kernel module is not available
+
+Current State:
+
+
+Hardened State:
+Module should be disabled using: install squashfs /bin/true
+
+Audit Result: **FAIL**
+
+Rationale:
+Removing support for unneeded filesystem types reduces the local attack surface of the system. If this filesystem type is not needed, disable it.
+
+---
+
+CIS Section: 1.1.1.7 – Ensure udf kernel module is not available
+
+Current State:
+insmod /lib/modules/6.8.0-1029-azure/kernel/lib/crc-itu-t.ko 
+insmod /lib/modules/6.8.0-1029-azure/kernel/fs/udf/udf.ko 
+
+Hardened State:
+Module should be disabled using: install udf /bin/true
+
+Audit Result: **FAIL**
+
+Rationale:
+Removing support for unneeded filesystem types reduces the local attack surface of the system. If this filesystem type is not needed, disable it.
+
+---
+
+CIS Section: 1.1.1.8 – Ensure USB storage kernel module is not available
+
+Current State:
+modprobe: FATAL: Module usb-storage not found in directory /lib/modules/6.8.0-1029-azure
+
+Hardened State:
+Module should be disabled using: install usb-storage /bin/true
+
+Audit Result: **FAIL**
+
+Rationale:
+Restricting USB access on the system will decrease the physical attack surface for a device and diminish the possible vectors to introduce malware.
+
+---
+

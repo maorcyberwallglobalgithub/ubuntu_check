@@ -1,0 +1,147 @@
+# CIS Section 7.2.x - Local User and Group Settings Audit
+# ========================================================
+
+---
+CIS Section: 7.2.1 - Accounts use shadowed passwords
+---
+Rationale:
+Using shadowed passwords stores encrypted hashes in /etc/shadow instead of /etc/passwd.
+
+Expected State:
+Each account in /etc/passwd should have 'x' in the password field.
+
+Current State:
+
+
+Audit Result: PASS
+
+---
+CIS Section: 7.2.2 - /etc/shadow fields are not empty
+---
+Rationale:
+Empty password fields allow passwordless login.
+
+Expected State:
+No accounts in /etc/shadow should have an empty password field.
+
+Current State:
+
+
+Audit Result: PASS
+
+---
+CIS Section: 7.2.3 - All groups in /etc/passwd exist in /etc/group
+---
+Rationale:
+Missing group entries in /etc/group reduce permission control.
+
+Expected State:
+All GIDs in /etc/passwd should appear in /etc/group.
+
+Current State:
+
+
+Audit Result: PASS
+
+---
+CIS Section: 7.2.4 - Shadow group is empty
+---
+Rationale:
+Users in 'shadow' group can read password hashes from /etc/shadow.
+
+Expected State:
+No users should be in the shadow group or have it as a primary group.
+
+Current State:
+
+
+Audit Result: PASS
+
+---
+CIS Section: 7.2.5 - No duplicate UIDs
+---
+Rationale:
+Duplicate UIDs prevent accountability and allow privilege overlap.
+
+Expected State:
+Each UID should be unique.
+
+Current State:
+
+
+Audit Result: PASS
+
+---
+CIS Section: 7.2.6 - No duplicate GIDs
+---
+Rationale:
+Duplicate GIDs create permission ambiguity.
+
+Expected State:
+Each GID should be unique.
+
+Current State:
+
+
+Audit Result: PASS
+
+---
+CIS Section: 7.2.7 - No duplicate usernames
+---
+Rationale:
+Duplicate usernames cause access confusion and privilege issues.
+
+Expected State:
+Each username in /etc/passwd must be unique.
+
+Current State:
+
+
+Audit Result: PASS
+
+---
+CIS Section: 7.2.8 - No duplicate group names
+---
+Rationale:
+Duplicate group names cause conflict in permission management.
+
+Expected State:
+Each group name must be unique in /etc/group.
+
+Current State:
+
+
+Audit Result: PASS
+
+---
+CIS Section: 7.2.9 - Home directories exist and are owned properly
+---
+Rationale:
+Missing or misconfigured home directories can result in insecure data storage or shell access.
+
+Expected State:
+Each user with a valid shell must have a home directory they own with 750 permissions.
+
+Current State:
+Owner mismatch for /root
+Owner mismatch for /bin
+Owner mismatch for /home/azureuser
+Owner mismatch for /home/azureagent
+
+Audit Result: FAIL
+Recommendation:
+Create missing directories and correct ownership using 'mkdir', 'chown', and 'chmod'.
+
+---
+CIS Section: 7.2.10 - Dot files access is secure
+---
+Rationale:
+Dotfiles like .netrc, .bash_history must be protected from unauthorized access.
+
+Expected State:
+Ensure only the owner has access, and .forward/.rhosts do not exist.
+
+Current State:
+
+
+Audit Result: PASS

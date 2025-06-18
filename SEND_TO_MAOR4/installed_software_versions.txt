@@ -1,0 +1,2565 @@
+Software: adduser
+Version: 3.118ubuntu5
+---
+Software: adwaita-icon-theme
+Version: 41.0-1ubuntu1
+---
+Software: alsa-topology-conf
+Version: 1.2.5.1-2
+---
+Software: alsa-ucm-conf
+Version: 1.2.6.3-1ubuntu1.12
+---
+Software: apparmor
+Version: 3.0.4-2ubuntu2.4
+---
+Software: apport
+Version: 2.20.11-0ubuntu82.8
+---
+Software: apport-symptoms
+Version: 0.24
+---
+Software: apt
+Version: 2.4.13
+---
+Software: apt-transport-https
+Version: 2.4.14
+---
+Software: apt-utils
+Version: 2.4.13
+---
+Software: aspell
+Version: 0.60.8-4build1
+---
+Software: aspell-en
+Version: 2018.04.16-0-1
+---
+Software: at-spi2-core
+Version: 2.44.0-3
+---
+Software: azure-cli
+Version: 2.73.0-1~jammy
+---
+Software: base-files
+Version: 12ubuntu4.7
+---
+Software: base-passwd
+Version: 3.5.52build1
+---
+Software: bash
+Version: 5.1-6ubuntu1.1
+---
+Software: bash-completion
+Version: 1:2.11-5ubuntu1
+---
+Software: bc
+Version: 1.07.1-3build1
+---
+Software: bcache-tools
+Version: 1.0.8-4ubuntu3
+---
+Software: bind9-dnsutils
+Version: 1:9.18.30-0ubuntu0.22.04.2
+---
+Software: bind9-host
+Version: 1:9.18.30-0ubuntu0.22.04.2
+---
+Software: bind9-libs
+Version: 1:9.18.30-0ubuntu0.22.04.2
+---
+Software: binutils
+Version: 2.38-4ubuntu2.8
+---
+Software: binutils-common
+Version: 2.38-4ubuntu2.8
+---
+Software: binutils-x86-64-linux-gnu
+Version: 2.38-4ubuntu2.8
+---
+Software: bolt
+Version: 0.9.2-1
+---
+Software: bsdextrautils
+Version: 2.37.2-4ubuntu3.4
+---
+Software: bsdutils
+Version: 1:2.37.2-4ubuntu3.4
+---
+Software: btrfs-progs
+Version: 5.16.2-1
+---
+Software: bubblewrap
+Version: 0.6.1-1ubuntu0.1
+---
+Software: busybox-initramfs
+Version: 1:1.30.1-7ubuntu3.1
+---
+Software: busybox-static
+Version: 1:1.30.1-7ubuntu3.1
+---
+Software: byobu
+Version: 5.133-1
+---
+Software: ca-certificates
+Version: 20240203~22.04.1
+---
+Software: chrony
+Version: 4.2-2ubuntu2
+---
+Software: cifs-utils
+Version: 2:6.14-1ubuntu0.2
+---
+Software: cloud-guest-utils
+Version: 0.32-22-g45fe84a5-0ubuntu1
+---
+Software: cloud-init
+Version: 24.4.1-0ubuntu0~22.04.2
+---
+Software: cloud-initramfs-copymods
+Version: 0.47ubuntu1
+---
+Software: cloud-initramfs-dyn-netconf
+Version: 0.47ubuntu1
+---
+Software: command-not-found
+Version: 22.04.0
+---
+Software: console-setup
+Version: 1.205ubuntu3
+---
+Software: console-setup-linux
+Version: 1.205ubuntu3
+---
+Software: coreutils
+Version: 8.32-4.1ubuntu1.2
+---
+Software: cpio
+Version: 2.13+dfsg-7ubuntu0.1
+---
+Software: cron
+Version: 3.0pl1-137ubuntu3
+---
+Software: cryptsetup
+Version: 2:2.4.3-1ubuntu1.3
+---
+Software: cryptsetup-bin
+Version: 2:2.4.3-1ubuntu1.3
+---
+Software: cryptsetup-initramfs
+Version: 2:2.4.3-1ubuntu1.3
+---
+Software: curl
+Version: 7.81.0-1ubuntu1.20
+---
+Software: dash
+Version: 0.5.11+git20210903+057cd650a4ed-3build1
+---
+Software: dbus
+Version: 1.12.20-2ubuntu4.1
+---
+Software: dbus-user-session
+Version: 1.12.20-2ubuntu4.1
+---
+Software: dconf-gsettings-backend
+Version: 0.40.0-3
+---
+Software: dconf-service
+Version: 0.40.0-3
+---
+Software: debconf
+Version: 1.5.79ubuntu1
+---
+Software: debconf-i18n
+Version: 1.5.79ubuntu1
+---
+Software: debianutils
+Version: 5.5-1ubuntu2
+---
+Software: dictionaries-common
+Version: 1.28.14
+---
+Software: diffutils
+Version: 1:3.8-0ubuntu2
+---
+Software: dirmngr
+Version: 2.2.27-3ubuntu2.3
+---
+Software: distro-info
+Version: 1.1ubuntu0.2
+---
+Software: distro-info-data
+Version: 0.52ubuntu0.9
+---
+Software: dmeventd
+Version: 2:1.02.175-2.1ubuntu5
+---
+Software: dmidecode
+Version: 3.3-3ubuntu0.2
+---
+Software: dmsetup
+Version: 2:1.02.175-2.1ubuntu5
+---
+Software: docbook-xml
+Version: 4.5-11
+---
+Software: dos2unix
+Version: 7.4.2-2
+---
+Software: dosfstools
+Version: 4.2-1build3
+---
+Software: dpkg
+Version: 1.21.1ubuntu2.3
+---
+Software: e2fsprogs
+Version: 1.46.5-2ubuntu1.2
+---
+Software: eatmydata
+Version: 130-2build1
+---
+Software: ed
+Version: 1.18-1
+---
+Software: efibootmgr
+Version: 17-1ubuntu2
+---
+Software: eject
+Version: 2.37.2-4ubuntu3.4
+---
+Software: emacsen-common
+Version: 3.0.4
+---
+Software: enchant-2
+Version: 2.3.2-1ubuntu2
+---
+Software: ethtool
+Version: 1:5.16-1ubuntu0.2
+---
+Software: fdisk
+Version: 2.37.2-4ubuntu3.4
+---
+Software: file
+Version: 1:5.41-3ubuntu0.1
+---
+Software: finalrd
+Version: 9build1
+---
+Software: findutils
+Version: 4.8.0-1ubuntu3
+---
+Software: fontconfig
+Version: 2.13.1-4.2ubuntu5
+---
+Software: fontconfig-config
+Version: 2.13.1-4.2ubuntu5
+---
+Software: fonts-dejavu-core
+Version: 2.37-2build1
+---
+Software: fonts-ubuntu-console
+Version: 0.83-6ubuntu1
+---
+Software: friendly-recovery
+Version: 0.2.42
+---
+Software: ftp
+Version: 20210827-4build1
+---
+Software: fuse3
+Version: 3.10.5-1build1
+---
+Software: fwupd-signed
+Version: 1.51.1~22.04.1+1.4-0ubuntu0.1
+---
+Software: gawk
+Version: 1:5.1.0-1ubuntu0.1
+---
+Software: gcc-12-base
+Version: 12.3.0-1ubuntu1~22.04
+---
+Software: gdisk
+Version: 1.0.8-4build1
+---
+Software: gedit
+Version: 41.0-3
+---
+Software: gedit-common
+Version: 41.0-3
+---
+Software: gettext-base
+Version: 0.21-4ubuntu4
+---
+Software: gir1.2-atk-1.0
+Version: 2.36.0-3build1
+---
+Software: gir1.2-freedesktop
+Version: 1.72.0-1
+---
+Software: gir1.2-gdkpixbuf-2.0
+Version: 2.42.8+dfsg-1ubuntu0.3
+---
+Software: gir1.2-glib-2.0
+Version: 1.72.0-1
+---
+Software: gir1.2-gtk-3.0
+Version: 3.24.33-1ubuntu2.2
+---
+Software: gir1.2-gtksource-4
+Version: 4.8.3-1
+---
+Software: gir1.2-harfbuzz-0.0
+Version: 2.7.4-1ubuntu3.2
+---
+Software: gir1.2-packagekitglib-1.0
+Version: 1.2.5-2ubuntu3
+---
+Software: gir1.2-pango-1.0
+Version: 1.50.6+ds-2ubuntu1
+---
+Software: gir1.2-peas-1.0
+Version: 1.32.0-1
+---
+Software: git
+Version: 1:2.34.1-1ubuntu1.12
+---
+Software: git-man
+Version: 1:2.34.1-1ubuntu1.12
+---
+Software: glib-networking
+Version: 2.72.0-1
+---
+Software: glib-networking-common
+Version: 2.72.0-1
+---
+Software: glib-networking-services
+Version: 2.72.0-1
+---
+Software: gnupg
+Version: 2.2.27-3ubuntu2.3
+---
+Software: gnupg-l10n
+Version: 2.2.27-3ubuntu2.3
+---
+Software: gnupg-utils
+Version: 2.2.27-3ubuntu2.3
+---
+Software: gpg
+Version: 2.2.27-3ubuntu2.3
+---
+Software: gpg-agent
+Version: 2.2.27-3ubuntu2.3
+---
+Software: gpg-wks-client
+Version: 2.2.27-3ubuntu2.3
+---
+Software: gpg-wks-server
+Version: 2.2.27-3ubuntu2.3
+---
+Software: gpgconf
+Version: 2.2.27-3ubuntu2.3
+---
+Software: gpgsm
+Version: 2.2.27-3ubuntu2.3
+---
+Software: gpgv
+Version: 2.2.27-3ubuntu2.3
+---
+Software: grep
+Version: 3.7-1build1
+---
+Software: groff-base
+Version: 1.22.4-8build1
+---
+Software: grub-common
+Version: 2.06-2ubuntu7.2
+---
+Software: grub-efi-amd64-bin
+Version: 2.06-2ubuntu14.8
+---
+Software: grub-efi-amd64-signed
+Version: 1.187.12+2.06-2ubuntu14.8
+---
+Software: grub-gfxpayload-lists
+Version: 0.7
+---
+Software: grub-pc
+Version: 2.06-2ubuntu7.2
+---
+Software: grub-pc-bin
+Version: 2.06-2ubuntu7.2
+---
+Software: grub2-common
+Version: 2.06-2ubuntu7.2
+---
+Software: gsettings-desktop-schemas
+Version: 42.0-1ubuntu1
+---
+Software: gstreamer1.0-gl
+Version: 1.20.1-1ubuntu0.4
+---
+Software: gstreamer1.0-plugins-base
+Version: 1.20.1-1ubuntu0.4
+---
+Software: gstreamer1.0-plugins-good
+Version: 1.20.3-0ubuntu1.3
+---
+Software: gstreamer1.0-x
+Version: 1.20.1-1ubuntu0.4
+---
+Software: gtk-update-icon-cache
+Version: 3.24.33-1ubuntu2.2
+---
+Software: gzip
+Version: 1.10-4ubuntu4.1
+---
+Software: hdparm
+Version: 9.60+ds-1build3
+---
+Software: hicolor-icon-theme
+Version: 0.17-2
+---
+Software: hostname
+Version: 3.23ubuntu2
+---
+Software: htop
+Version: 3.0.5-7build2
+---
+Software: humanity-icon-theme
+Version: 0.6.16
+---
+Software: hunspell-en-us
+Version: 1:2020.12.07-2
+---
+Software: hwdata
+Version: 0.357-1
+---
+Software: info
+Version: 6.8-4build1
+---
+Software: init
+Version: 1.62
+---
+Software: init-system-helpers
+Version: 1.62
+---
+Software: initramfs-tools
+Version: 0.140ubuntu13.4
+---
+Software: initramfs-tools-bin
+Version: 0.140ubuntu13.4
+---
+Software: initramfs-tools-core
+Version: 0.140ubuntu13.4
+---
+Software: install-info
+Version: 6.8-4build1
+---
+Software: iproute2
+Version: 5.15.0-1ubuntu2
+---
+Software: iptables
+Version: 1.8.7-1ubuntu5.2
+---
+Software: iputils-ping
+Version: 3:20211215-1
+---
+Software: iputils-tracepath
+Version: 3:20211215-1
+---
+Software: irqbalance
+Version: 1.8.0-1ubuntu0.2
+---
+Software: isc-dhcp-client
+Version: 4.4.1-2.3ubuntu2.4
+---
+Software: isc-dhcp-common
+Version: 4.4.1-2.3ubuntu2.4
+---
+Software: iso-codes
+Version: 4.9.0-1
+---
+Software: jq
+Version: 1.6-2.1ubuntu3
+---
+Software: kbd
+Version: 2.3.0-3ubuntu4.22.04
+---
+Software: keyboard-configuration
+Version: 1.205ubuntu3
+---
+Software: keyutils
+Version: 1.6.1-2ubuntu3
+---
+Software: klibc-utils
+Version: 2.0.10-4ubuntu0.1
+---
+Software: kmod
+Version: 29-1ubuntu1
+---
+Software: kpartx
+Version: 0.8.8-1ubuntu1.22.04.4
+---
+Software: landscape-common
+Version: 23.02-0ubuntu1~22.04.4
+---
+Software: less
+Version: 590-1ubuntu0.22.04.3
+---
+Software: libaa1
+Version: 1.4p5-50build1
+---
+Software: libacl1
+Version: 2.3.1-1
+---
+Software: libaio1
+Version: 0.3.112-13build1
+---
+Software: libapparmor1
+Version: 3.0.4-2ubuntu2.4
+---
+Software: libappstream4
+Version: 0.15.2-2
+---
+Software: libapt-pkg6.0
+Version: 2.4.13
+---
+Software: libarchive13
+Version: 3.6.0-1ubuntu1.4
+---
+Software: libargon2-1
+Version: 0~20171227-0.3
+---
+Software: libasound2
+Version: 1.2.6.1-1ubuntu1
+---
+Software: libasound2-data
+Version: 1.2.6.1-1ubuntu1
+---
+Software: libaspell15
+Version: 0.60.8-4build1
+---
+Software: libassuan0
+Version: 2.5.5-1build1
+---
+Software: libasyncns0
+Version: 0.8-6build2
+---
+Software: libatasmart4
+Version: 0.19-5build2
+---
+Software: libatk-bridge2.0-0
+Version: 2.38.0-3
+---
+Software: libatk1.0-0
+Version: 2.36.0-3build1
+---
+Software: libatk1.0-data
+Version: 2.36.0-3build1
+---
+Software: libatm1
+Version: 1:2.5.1-4build2
+---
+Software: libatomic1
+Version: 12.3.0-1ubuntu1~22.04
+---
+Software: libatspi2.0-0
+Version: 2.44.0-3
+---
+Software: libattr1
+Version: 1:2.5.1-1build1
+---
+Software: libaudit-common
+Version: 1:3.0.7-1build1
+---
+Software: libaudit1
+Version: 1:3.0.7-1build1
+---
+Software: libavahi-client3
+Version: 0.8-5ubuntu5.2
+---
+Software: libavahi-common-data
+Version: 0.8-5ubuntu5.2
+---
+Software: libavahi-common3
+Version: 0.8-5ubuntu5.2
+---
+Software: libavc1394-0
+Version: 0.5.4-5build2
+---
+Software: libbinutils
+Version: 2.38-4ubuntu2.8
+---
+Software: libblkid1
+Version: 2.37.2-4ubuntu3.4
+---
+Software: libblockdev-crypto2
+Version: 2.26-1
+---
+Software: libblockdev-fs2
+Version: 2.26-1
+---
+Software: libblockdev-loop2
+Version: 2.26-1
+---
+Software: libblockdev-part-err2
+Version: 2.26-1
+---
+Software: libblockdev-part2
+Version: 2.26-1
+---
+Software: libblockdev-swap2
+Version: 2.26-1
+---
+Software: libblockdev-utils2
+Version: 2.26-1
+---
+Software: libblockdev2
+Version: 2.26-1
+---
+Software: libbpf0
+Version: 1:0.5.0-1ubuntu22.04.1
+---
+Software: libbrotli1
+Version: 1.0.9-2build6
+---
+Software: libbsd0
+Version: 0.11.5-1
+---
+Software: libbz2-1.0
+Version: 1.0.8-5build1
+---
+Software: libc-bin
+Version: 2.35-0ubuntu3.10
+---
+Software: libc6
+Version: 2.35-0ubuntu3.10
+---
+Software: libcaca0
+Version: 0.99.beta19-2.2ubuntu4
+---
+Software: libcairo-gobject2
+Version: 1.16.0-5ubuntu2
+---
+Software: libcairo2
+Version: 1.16.0-5ubuntu2
+---
+Software: libcanberra0
+Version: 0.30-10ubuntu1.22.04.1
+---
+Software: libcap-ng0
+Version: 0.7.9-2.2build3
+---
+Software: libcap2
+Version: 1:2.44-1ubuntu0.22.04.2
+---
+Software: libcap2-bin
+Version: 1:2.44-1ubuntu0.22.04.2
+---
+Software: libcbor0.8
+Version: 0.8.0-2ubuntu1
+---
+Software: libcdparanoia0
+Version: 3.10.2+debian-14build2
+---
+Software: libcolord2
+Version: 1.4.6-1
+---
+Software: libcom-err2
+Version: 1.46.5-2ubuntu1.2
+---
+Software: libcrypt1
+Version: 1:4.4.27-1
+---
+Software: libcryptsetup12
+Version: 2:2.4.3-1ubuntu1.3
+---
+Software: libctf-nobfd0
+Version: 2.38-4ubuntu2.8
+---
+Software: libctf0
+Version: 2.38-4ubuntu2.8
+---
+Software: libcups2
+Version: 2.4.1op1-1ubuntu4.11
+---
+Software: libcurl3-gnutls
+Version: 7.81.0-1ubuntu1.20
+---
+Software: libcurl4
+Version: 7.81.0-1ubuntu1.20
+---
+Software: libdatrie1
+Version: 0.2.13-2
+---
+Software: libdb5.3
+Version: 5.3.28+dfsg1-0.8ubuntu3
+---
+Software: libdbus-1-3
+Version: 1.12.20-2ubuntu4.1
+---
+Software: libdconf1
+Version: 0.40.0-3
+---
+Software: libdebconfclient0
+Version: 0.261ubuntu1
+---
+Software: libdeflate0
+Version: 1.10-2
+---
+Software: libdevmapper-event1.02.1
+Version: 2:1.02.175-2.1ubuntu5
+---
+Software: libdevmapper1.02.1
+Version: 2:1.02.175-2.1ubuntu5
+---
+Software: libdns-export1110
+Version: 1:9.11.19+dfsg-2.1ubuntu3
+---
+Software: libdrm-amdgpu1
+Version: 2.4.113-2~ubuntu0.22.04.1
+---
+Software: libdrm-common
+Version: 2.4.113-2~ubuntu0.22.04.1
+---
+Software: libdrm-intel1
+Version: 2.4.113-2~ubuntu0.22.04.1
+---
+Software: libdrm-nouveau2
+Version: 2.4.113-2~ubuntu0.22.04.1
+---
+Software: libdrm-radeon1
+Version: 2.4.113-2~ubuntu0.22.04.1
+---
+Software: libdrm2
+Version: 2.4.113-2~ubuntu0.22.04.1
+---
+Software: libdv4
+Version: 1.0.0-14build1
+---
+Software: libdw1
+Version: 0.186-1ubuntu0.1
+---
+Software: libeatmydata1
+Version: 130-2build1
+---
+Software: libedit2
+Version: 3.1-20210910-1build1
+---
+Software: libefiboot1
+Version: 37-6ubuntu2
+---
+Software: libefivar1
+Version: 37-6ubuntu2
+---
+Software: libegl-mesa0
+Version: 23.2.1-1ubuntu3.1~22.04.3
+---
+Software: libegl1
+Version: 1.4.0-1
+---
+Software: libelf1
+Version: 0.186-1ubuntu0.1
+---
+Software: libenchant-2-2
+Version: 2.3.2-1ubuntu2
+---
+Software: libepoxy0
+Version: 1.5.10-1
+---
+Software: liberror-perl
+Version: 0.17029-1
+---
+Software: libestr0
+Version: 0.1.10-2.1build3
+---
+Software: libevdev2
+Version: 1.12.1+dfsg-1
+---
+Software: libevent-core-2.1-7
+Version: 2.1.12-stable-1build3
+---
+Software: libexpat1
+Version: 2.4.7-1ubuntu0.6
+---
+Software: libext2fs2
+Version: 1.46.5-2ubuntu1.2
+---
+Software: libfastjson4
+Version: 0.99.9-1build2
+---
+Software: libfdisk1
+Version: 2.37.2-4ubuntu3.4
+---
+Software: libffi8
+Version: 3.4.2-4
+---
+Software: libfido2-1
+Version: 1.10.0-1
+---
+Software: libflac8
+Version: 1.3.3-2ubuntu0.2
+---
+Software: libflashrom1
+Version: 1.2-5build1
+---
+Software: libfontconfig1
+Version: 2.13.1-4.2ubuntu5
+---
+Software: libfreetype6
+Version: 2.11.1+dfsg-1ubuntu0.3
+---
+Software: libfribidi0
+Version: 1.0.8-2ubuntu3.1
+---
+Software: libftdi1-2
+Version: 1.5-5build3
+---
+Software: libfuse3-3
+Version: 3.10.5-1build1
+---
+Software: libfwupd2
+Version: 1.7.9-1~22.04.3
+---
+Software: libfwupdplugin5
+Version: 1.7.9-1~22.04.3
+---
+Software: libgbm1
+Version: 23.2.1-1ubuntu3.1~22.04.3
+---
+Software: libgcab-1.0-0
+Version: 1.4-3build2
+---
+Software: libgcc-s1
+Version: 12.3.0-1ubuntu1~22.04
+---
+Software: libgcrypt20
+Version: 1.9.4-3ubuntu3
+---
+Software: libgdbm-compat4
+Version: 1.23-1
+---
+Software: libgdbm6
+Version: 1.23-1
+---
+Software: libgdk-pixbuf-2.0-0
+Version: 2.42.8+dfsg-1ubuntu0.3
+---
+Software: libgdk-pixbuf2.0-bin
+Version: 2.42.8+dfsg-1ubuntu0.3
+---
+Software: libgdk-pixbuf2.0-common
+Version: 2.42.8+dfsg-1ubuntu0.3
+---
+Software: libgirepository-1.0-1
+Version: 1.72.0-1
+---
+Software: libgl1
+Version: 1.4.0-1
+---
+Software: libgl1-amber-dri
+Version: 21.3.9-0ubuntu1~22.04.1
+---
+Software: libgl1-mesa-dri
+Version: 23.2.1-1ubuntu3.1~22.04.3
+---
+Software: libglapi-mesa
+Version: 23.2.1-1ubuntu3.1~22.04.3
+---
+Software: libgles2
+Version: 1.4.0-1
+---
+Software: libglib2.0-0
+Version: 2.72.4-0ubuntu2.5
+---
+Software: libglib2.0-bin
+Version: 2.72.4-0ubuntu2.5
+---
+Software: libglib2.0-data
+Version: 2.72.4-0ubuntu2.5
+---
+Software: libglvnd0
+Version: 1.4.0-1
+---
+Software: libglx-mesa0
+Version: 23.2.1-1ubuntu3.1~22.04.3
+---
+Software: libglx0
+Version: 1.4.0-1
+---
+Software: libgmp10
+Version: 2:6.2.1+dfsg-3ubuntu1
+---
+Software: libgnutls30
+Version: 3.7.3-4ubuntu1.6
+---
+Software: libgpg-error0
+Version: 1.43-3
+---
+Software: libgpgme11
+Version: 1.16.0-1.2ubuntu4.2
+---
+Software: libgpm2
+Version: 1.20.7-10build1
+---
+Software: libgraphene-1.0-0
+Version: 1.10.8-1
+---
+Software: libgraphite2-3
+Version: 1.3.14-1build2
+---
+Software: libgspell-1-2
+Version: 1.9.1-4
+---
+Software: libgspell-1-common
+Version: 1.9.1-4
+---
+Software: libgssapi-krb5-2
+Version: 1.19.2-2ubuntu0.7
+---
+Software: libgstreamer-gl1.0-0
+Version: 1.20.1-1ubuntu0.4
+---
+Software: libgstreamer-plugins-base1.0-0
+Version: 1.20.1-1ubuntu0.4
+---
+Software: libgstreamer-plugins-good1.0-0
+Version: 1.20.3-0ubuntu1.3
+---
+Software: libgstreamer1.0-0
+Version: 1.20.3-0ubuntu1.1
+---
+Software: libgtk-3-0
+Version: 3.24.33-1ubuntu2.2
+---
+Software: libgtk-3-bin
+Version: 3.24.33-1ubuntu2.2
+---
+Software: libgtk-3-common
+Version: 3.24.33-1ubuntu2.2
+---
+Software: libgtksourceview-4-0
+Version: 4.8.3-1
+---
+Software: libgtksourceview-4-common
+Version: 4.8.3-1
+---
+Software: libgudev-1.0-0
+Version: 1:237-2build1
+---
+Software: libgusb2
+Version: 0.3.10-1
+---
+Software: libhandy-1-0
+Version: 1.6.1-1
+---
+Software: libharfbuzz-icu0
+Version: 2.7.4-1ubuntu3.2
+---
+Software: libharfbuzz0b
+Version: 2.7.4-1ubuntu3.2
+---
+Software: libhogweed6
+Version: 3.7.3-1build2
+---
+Software: libhunspell-1.7-0
+Version: 1.7.0-4build1
+---
+Software: libhyphen0
+Version: 2.8.8-7build2
+---
+Software: libicu70
+Version: 70.1-2
+---
+Software: libidn2-0
+Version: 2.3.2-2build1
+---
+Software: libiec61883-0
+Version: 1.2.0-4build3
+---
+Software: libinih1
+Version: 53-1ubuntu3
+---
+Software: libintl-perl
+Version: 1.26-3build2
+---
+Software: libintl-xs-perl
+Version: 1.26-3build2
+---
+Software: libip4tc2
+Version: 1.8.7-1ubuntu5.2
+---
+Software: libip6tc2
+Version: 1.8.7-1ubuntu5.2
+---
+Software: libisc-export1105
+Version: 1:9.11.19+dfsg-2.1ubuntu3
+---
+Software: libisns0
+Version: 0.101-0ubuntu2
+---
+Software: libjack-jackd2-0
+Version: 1.9.20~dfsg-1
+---
+Software: libjansson4
+Version: 2.13.1-1.1build3
+---
+Software: libjavascriptcoregtk-4.0-18
+Version: 2.48.3-0ubuntu0.22.04.1
+---
+Software: libjbig0
+Version: 2.1-3.1ubuntu0.22.04.1
+---
+Software: libjcat1
+Version: 0.1.9-1
+---
+Software: libjpeg-turbo8
+Version: 2.1.2-0ubuntu1
+---
+Software: libjpeg8
+Version: 8c-2ubuntu10
+---
+Software: libjq1
+Version: 1.6-2.1ubuntu3
+---
+Software: libjson-c5
+Version: 0.15-3~ubuntu1.22.04.2
+---
+Software: libjson-glib-1.0-0
+Version: 1.6.6-1build1
+---
+Software: libjson-glib-1.0-common
+Version: 1.6.6-1build1
+---
+Software: libk5crypto3
+Version: 1.19.2-2ubuntu0.7
+---
+Software: libkeyutils1
+Version: 1.6.1-2ubuntu3
+---
+Software: libklibc
+Version: 2.0.10-4ubuntu0.1
+---
+Software: libkmod2
+Version: 29-1ubuntu1
+---
+Software: libkrb5-3
+Version: 1.19.2-2ubuntu0.7
+---
+Software: libkrb5support0
+Version: 1.19.2-2ubuntu0.7
+---
+Software: libksba8
+Version: 1.6.0-2ubuntu0.2
+---
+Software: liblcms2-2
+Version: 2.12~rc1-2build2
+---
+Software: libldap-2.5-0
+Version: 2.5.19+dfsg-0ubuntu0.22.04.1
+---
+Software: libldap-common
+Version: 2.5.19+dfsg-0ubuntu0.22.04.1
+---
+Software: libllvm15
+Version: 1:15.0.7-0ubuntu0.22.04.3
+---
+Software: liblmdb0
+Version: 0.9.24-1build2
+---
+Software: liblocale-gettext-perl
+Version: 1.07-4build3
+---
+Software: libltdl7
+Version: 2.4.6-15build2
+---
+Software: liblvm2cmd2.03
+Version: 2.03.11-2.1ubuntu5
+---
+Software: liblz4-1
+Version: 1.9.3-2build2
+---
+Software: liblzma5
+Version: 5.2.5-2ubuntu1
+---
+Software: liblzo2-2
+Version: 2.10-2build3
+---
+Software: libmagic-mgc
+Version: 1:5.41-3ubuntu0.1
+---
+Software: libmagic1
+Version: 1:5.41-3ubuntu0.1
+---
+Software: libmanette-0.2-0
+Version: 0.2.6-3build1
+---
+Software: libmaxminddb0
+Version: 1.5.2-1build2
+---
+Software: libmbim-glib4
+Version: 1.28.0-1~ubuntu20.04.2
+---
+Software: libmbim-proxy
+Version: 1.28.0-1~ubuntu20.04.2
+---
+Software: libmd0
+Version: 1.0.4-1build1
+---
+Software: libmm-glib0
+Version: 1.20.0-1~ubuntu22.04.4
+---
+Software: libmnl0
+Version: 1.0.4-3build2
+---
+Software: libmodule-find-perl
+Version: 0.15-1
+---
+Software: libmodule-scandeps-perl
+Version: 1.31-1ubuntu0.1
+---
+Software: libmount1
+Version: 2.37.2-4ubuntu3.4
+---
+Software: libmp3lame0
+Version: 3.100-3build2
+---
+Software: libmpdec3
+Version: 2.5.1-2build2
+---
+Software: libmpfr6
+Version: 4.1.0-3build3
+---
+Software: libmpg123-0
+Version: 1.29.3-1ubuntu0.1
+---
+Software: libmspack0
+Version: 0.10.1-2build2
+---
+Software: libncurses6
+Version: 6.3-2ubuntu0.1
+---
+Software: libncursesw6
+Version: 6.3-2ubuntu0.1
+---
+Software: libnetfilter-conntrack3
+Version: 1.0.9-1
+---
+Software: libnetplan0
+Version: 0.106.1-7ubuntu0.22.04.4
+---
+Software: libnettle8
+Version: 3.7.3-1build2
+---
+Software: libnewt0.52
+Version: 0.52.21-5ubuntu2
+---
+Software: libnfnetlink0
+Version: 1.0.1-3build3
+---
+Software: libnftables1
+Version: 1.0.2-1ubuntu3
+---
+Software: libnftnl11
+Version: 1.2.1-1build1
+---
+Software: libnghttp2-14
+Version: 1.43.0-1ubuntu0.2
+---
+Software: libnl-3-200
+Version: 3.5.0-0.1
+---
+Software: libnl-genl-3-200
+Version: 3.5.0-0.1
+---
+Software: libnotify4
+Version: 0.7.9-3ubuntu5.22.04.1
+---
+Software: libnpth0
+Version: 1.6-3build2
+---
+Software: libnsl2
+Version: 1.3.0-2build2
+---
+Software: libnspr4
+Version: 2:4.35-0ubuntu0.22.04.1
+---
+Software: libnss-systemd
+Version: 249.11-0ubuntu3.16
+---
+Software: libnss3
+Version: 2:3.98-0ubuntu0.22.04.2
+---
+Software: libntfs-3g89
+Version: 1:2021.8.22-3ubuntu1.2
+---
+Software: libnuma1
+Version: 2.0.14-3ubuntu2
+---
+Software: libogg0
+Version: 1.3.5-0ubuntu3
+---
+Software: libonig5
+Version: 6.9.7.1-2build1
+---
+Software: libopeniscsiusr
+Version: 2.1.5-1ubuntu1.1
+---
+Software: libopus0
+Version: 1.3.1-0.1build2
+---
+Software: liborc-0.4-0
+Version: 1:0.4.32-2ubuntu0.1
+---
+Software: libp11-kit0
+Version: 0.24.0-6build1
+---
+Software: libpackagekit-glib2-18
+Version: 1.2.5-2ubuntu3
+---
+Software: libpam-cap
+Version: 1:2.44-1ubuntu0.22.04.2
+---
+Software: libpam-modules
+Version: 1.4.0-11ubuntu2.5
+---
+Software: libpam-modules-bin
+Version: 1.4.0-11ubuntu2.5
+---
+Software: libpam-runtime
+Version: 1.4.0-11ubuntu2.5
+---
+Software: libpam-systemd
+Version: 249.11-0ubuntu3.16
+---
+Software: libpam0g
+Version: 1.4.0-11ubuntu2.5
+---
+Software: libpango-1.0-0
+Version: 1.50.6+ds-2ubuntu1
+---
+Software: libpangocairo-1.0-0
+Version: 1.50.6+ds-2ubuntu1
+---
+Software: libpangoft2-1.0-0
+Version: 1.50.6+ds-2ubuntu1
+---
+Software: libpangoxft-1.0-0
+Version: 1.50.6+ds-2ubuntu1
+---
+Software: libparted-fs-resize0
+Version: 3.4-2build1
+---
+Software: libparted2
+Version: 3.4-2build1
+---
+Software: libpcap0.8
+Version: 1.10.1-4ubuntu1.22.04.1
+---
+Software: libpci3
+Version: 1:3.7.0-6
+---
+Software: libpciaccess0
+Version: 0.16-3
+---
+Software: libpcre2-8-0
+Version: 10.39-3ubuntu0.1
+---
+Software: libpcre3
+Version: 2:8.39-13ubuntu0.22.04.1
+---
+Software: libpeas-1.0-0
+Version: 1.32.0-1
+---
+Software: libpeas-common
+Version: 1.32.0-1
+---
+Software: libperl5.34
+Version: 5.34.0-3ubuntu1.4
+---
+Software: libpipeline1
+Version: 1.5.5-1
+---
+Software: libpipewire-0.3-0
+Version: 0.3.48-1ubuntu3
+---
+Software: libpipewire-0.3-common
+Version: 0.3.48-1ubuntu3
+---
+Software: libpipewire-0.3-modules
+Version: 0.3.48-1ubuntu3
+---
+Software: libpixman-1-0
+Version: 0.40.0-1ubuntu0.22.04.1
+---
+Software: libplymouth5
+Version: 0.9.5+git20211018-1ubuntu3
+---
+Software: libpng16-16
+Version: 1.6.37-3build5
+---
+Software: libpolkit-agent-1-0
+Version: 0.105-33
+---
+Software: libpolkit-gobject-1-0
+Version: 0.105-33
+---
+Software: libpopt0
+Version: 1.18-3build1
+---
+Software: libproc-processtable-perl
+Version: 0.634-1build1
+---
+Software: libprocps8
+Version: 2:3.3.17-6ubuntu2.1
+---
+Software: libproxy1v5
+Version: 0.4.17-2
+---
+Software: libpsl5
+Version: 0.21.0-1.2build2
+---
+Software: libpulse0
+Version: 1:15.99.1+dfsg1-1ubuntu2.2
+---
+Software: libpython3-stdlib
+Version: 3.10.6-1~22.04.1
+---
+Software: libpython3.10
+Version: 3.10.12-1~22.04.9
+---
+Software: libpython3.10-minimal
+Version: 3.10.12-1~22.04.9
+---
+Software: libpython3.10-stdlib
+Version: 3.10.12-1~22.04.9
+---
+Software: libqmi-glib5
+Version: 1.32.0-1ubuntu0.22.04.1
+---
+Software: libqmi-proxy
+Version: 1.32.0-1ubuntu0.22.04.1
+---
+Software: libraw1394-11
+Version: 2.1.2-2build2
+---
+Software: libreadline8
+Version: 8.1.2-1
+---
+Software: librsvg2-2
+Version: 2.52.5+dfsg-3ubuntu0.2
+---
+Software: librsvg2-common
+Version: 2.52.5+dfsg-3ubuntu0.2
+---
+Software: librtmp1
+Version: 2.4+20151223.gitfa8646d.1-2build4
+---
+Software: libsamplerate0
+Version: 0.2.2-1build1
+---
+Software: libsasl2-2
+Version: 2.1.27+dfsg2-3ubuntu1.2
+---
+Software: libsasl2-modules
+Version: 2.1.27+dfsg2-3ubuntu1.2
+---
+Software: libsasl2-modules-db
+Version: 2.1.27+dfsg2-3ubuntu1.2
+---
+Software: libseccomp2
+Version: 2.5.3-2ubuntu3~22.04.1
+---
+Software: libsecret-1-0
+Version: 0.20.5-2
+---
+Software: libsecret-common
+Version: 0.20.5-2
+---
+Software: libselinux1
+Version: 3.3-1build2
+---
+Software: libsemanage-common
+Version: 3.3-1build2
+---
+Software: libsemanage2
+Version: 3.3-1build2
+---
+Software: libsensors-config
+Version: 1:3.6.0-7ubuntu1
+---
+Software: libsensors5
+Version: 1:3.6.0-7ubuntu1
+---
+Software: libsepol2
+Version: 3.3-1build1
+---
+Software: libsgutils2-2
+Version: 1.46-1ubuntu0.22.04.1
+---
+Software: libshout3
+Version: 2.4.5-1build3
+---
+Software: libsigsegv2
+Version: 2.13-1ubuntu3
+---
+Software: libslang2
+Version: 2.3.2-5build4
+---
+Software: libsmartcols1
+Version: 2.37.2-4ubuntu3.4
+---
+Software: libsmbios-c2
+Version: 2.4.3-1build1
+---
+Software: libsndfile1
+Version: 1.0.31-2ubuntu0.2
+---
+Software: libsodium23
+Version: 1.0.18-1build2
+---
+Software: libsort-naturally-perl
+Version: 1.03-2
+---
+Software: libsoup2.4-1
+Version: 2.74.2-3ubuntu0.5
+---
+Software: libsoup2.4-common
+Version: 2.74.2-3ubuntu0.5
+---
+Software: libspa-0.2-modules
+Version: 0.3.48-1ubuntu3
+---
+Software: libspeex1
+Version: 1.2~rc1.2-1.1ubuntu3
+---
+Software: libsqlite3-0
+Version: 3.37.2-2ubuntu0.4
+---
+Software: libss2
+Version: 1.46.5-2ubuntu1.2
+---
+Software: libssh-4
+Version: 0.9.6-2ubuntu0.22.04.3
+---
+Software: libssl3
+Version: 3.0.2-0ubuntu1.19
+---
+Software: libstdc++6
+Version: 12.3.0-1ubuntu1~22.04
+---
+Software: libstemmer0d
+Version: 2.2.0-1build1
+---
+Software: libsystemd0
+Version: 249.11-0ubuntu3.16
+---
+Software: libtag1v5
+Version: 1.11.1+dfsg.1-3ubuntu3
+---
+Software: libtag1v5-vanilla
+Version: 1.11.1+dfsg.1-3ubuntu3
+---
+Software: libtalloc2
+Version: 2.3.3-2build1
+---
+Software: libtasn1-6
+Version: 4.18.0-4ubuntu0.1
+---
+Software: libtcl8.6
+Version: 8.6.12+dfsg-1build1
+---
+Software: libtdb1
+Version: 1.4.5-2build1
+---
+Software: libterm-readkey-perl
+Version: 2.38-1build4
+---
+Software: libtevent0
+Version: 0.11.0-1build1
+---
+Software: libtext-charwidth-perl
+Version: 0.04-10build3
+---
+Software: libtext-iconv-perl
+Version: 1.7-7build3
+---
+Software: libtext-wrapi18n-perl
+Version: 0.06-9
+---
+Software: libthai-data
+Version: 0.1.29-1build1
+---
+Software: libthai0
+Version: 0.1.29-1build1
+---
+Software: libtheora0
+Version: 1.1.1+dfsg.1-15ubuntu4
+---
+Software: libtiff5
+Version: 4.3.0-6ubuntu0.10
+---
+Software: libtinfo6
+Version: 6.3-2ubuntu0.1
+---
+Software: libtirpc-common
+Version: 1.3.2-2ubuntu0.1
+---
+Software: libtirpc3
+Version: 1.3.2-2ubuntu0.1
+---
+Software: libtraceevent1
+Version: 1:1.3.3-1
+---
+Software: libtss2-esys-3.0.2-0
+Version: 3.2.0-1ubuntu1.1
+---
+Software: libtss2-mu0
+Version: 3.2.0-1ubuntu1.1
+---
+Software: libtss2-rc0
+Version: 3.2.0-1ubuntu1.1
+---
+Software: libtss2-sys1
+Version: 3.2.0-1ubuntu1.1
+---
+Software: libtss2-tcti-cmd0
+Version: 3.2.0-1ubuntu1.1
+---
+Software: libtss2-tcti-device0
+Version: 3.2.0-1ubuntu1.1
+---
+Software: libtss2-tcti-mssim0
+Version: 3.2.0-1ubuntu1.1
+---
+Software: libtss2-tcti-swtpm0
+Version: 3.2.0-1ubuntu1.1
+---
+Software: libtwolame0
+Version: 0.4.0-2build2
+---
+Software: libuchardet0
+Version: 0.0.7-1build2
+---
+Software: libudev1
+Version: 249.11-0ubuntu3.16
+---
+Software: libudisks2-0
+Version: 2.9.4-1ubuntu2
+---
+Software: libunistring2
+Version: 1.0-1
+---
+Software: libunwind8
+Version: 1.3.2-2build2.1
+---
+Software: liburcu8
+Version: 0.13.1-1
+---
+Software: libusb-1.0-0
+Version: 2:1.0.25-1ubuntu2
+---
+Software: libutempter0
+Version: 1.2.1-2build2
+---
+Software: libuuid1
+Version: 2.37.2-4ubuntu3.4
+---
+Software: libuv1
+Version: 1.43.0-1ubuntu0.1
+---
+Software: libv4l-0
+Version: 1.22.1-2build1
+---
+Software: libv4lconvert0
+Version: 1.22.1-2build1
+---
+Software: libvisual-0.4-0
+Version: 0.4.0-17build2
+---
+Software: libvolume-key1
+Version: 0.3.12-3.1build3
+---
+Software: libvorbis0a
+Version: 1.3.7-1build2
+---
+Software: libvorbisenc2
+Version: 1.3.7-1build2
+---
+Software: libvorbisfile3
+Version: 1.3.7-1build2
+---
+Software: libvpx7
+Version: 1.11.0-2ubuntu2.4
+---
+Software: libwavpack1
+Version: 5.4.0-1build2
+---
+Software: libwayland-client0
+Version: 1.20.0-1ubuntu0.1
+---
+Software: libwayland-cursor0
+Version: 1.20.0-1ubuntu0.1
+---
+Software: libwayland-egl1
+Version: 1.20.0-1ubuntu0.1
+---
+Software: libwayland-server0
+Version: 1.20.0-1ubuntu0.1
+---
+Software: libwbclient0
+Version: 2:4.15.13+dfsg-0ubuntu1.6
+---
+Software: libwebkit2gtk-4.0-37
+Version: 2.48.3-0ubuntu0.22.04.1
+---
+Software: libwebp7
+Version: 1.2.2-2ubuntu0.22.04.2
+---
+Software: libwebpdemux2
+Version: 1.2.2-2ubuntu0.22.04.2
+---
+Software: libwebpmux3
+Version: 1.2.2-2ubuntu0.22.04.2
+---
+Software: libwebrtc-audio-processing1
+Version: 0.3.1-0ubuntu5
+---
+Software: libwoff1
+Version: 1.0.2-1build4
+---
+Software: libwrap0
+Version: 7.6.q-31build2
+---
+Software: libx11-6
+Version: 2:1.7.5-1ubuntu0.3
+---
+Software: libx11-data
+Version: 2:1.7.5-1ubuntu0.3
+---
+Software: libx11-xcb1
+Version: 2:1.7.5-1ubuntu0.3
+---
+Software: libxau6
+Version: 1:1.0.9-1build5
+---
+Software: libxcb-dri2-0
+Version: 1.14-3ubuntu3
+---
+Software: libxcb-dri3-0
+Version: 1.14-3ubuntu3
+---
+Software: libxcb-glx0
+Version: 1.14-3ubuntu3
+---
+Software: libxcb-present0
+Version: 1.14-3ubuntu3
+---
+Software: libxcb-randr0
+Version: 1.14-3ubuntu3
+---
+Software: libxcb-render0
+Version: 1.14-3ubuntu3
+---
+Software: libxcb-shm0
+Version: 1.14-3ubuntu3
+---
+Software: libxcb-sync1
+Version: 1.14-3ubuntu3
+---
+Software: libxcb-xfixes0
+Version: 1.14-3ubuntu3
+---
+Software: libxcb1
+Version: 1.14-3ubuntu3
+---
+Software: libxcomposite1
+Version: 1:0.4.5-1build2
+---
+Software: libxcursor1
+Version: 1:1.2.0-2build4
+---
+Software: libxdamage1
+Version: 1:1.1.5-2build2
+---
+Software: libxdmcp6
+Version: 1:1.1.3-0ubuntu5
+---
+Software: libxext6
+Version: 2:1.3.4-1build1
+---
+Software: libxfixes3
+Version: 1:6.0.0-1
+---
+Software: libxft2
+Version: 2.3.4-1
+---
+Software: libxi6
+Version: 2:1.8-1build1
+---
+Software: libxinerama1
+Version: 2:1.1.4-3
+---
+Software: libxkbcommon0
+Version: 1.4.0-1
+---
+Software: libxml2
+Version: 2.9.13+dfsg-1ubuntu0.7
+---
+Software: libxmlb2
+Version: 0.3.6-2build1
+---
+Software: libxmlsec1
+Version: 1.2.33-1build2
+---
+Software: libxmlsec1-openssl
+Version: 1.2.33-1build2
+---
+Software: libxmuu1
+Version: 2:1.1.3-3
+---
+Software: libxrandr2
+Version: 2:1.5.2-1build1
+---
+Software: libxrender1
+Version: 1:0.9.10-1build4
+---
+Software: libxshmfence1
+Version: 1.3-1build4
+---
+Software: libxslt1.1
+Version: 1.1.34-4ubuntu0.22.04.3
+---
+Software: libxtables12
+Version: 1.8.7-1ubuntu5.2
+---
+Software: libxtst6
+Version: 2:1.2.3-1build4
+---
+Software: libxv1
+Version: 2:1.0.11-1build2
+---
+Software: libxxf86vm1
+Version: 1:1.1.4-1build3
+---
+Software: libxxhash0
+Version: 0.8.1-1
+---
+Software: libyaml-0-2
+Version: 0.2.2-1build2
+---
+Software: libyelp0
+Version: 42.1-1ubuntu0.1
+---
+Software: libzstd1
+Version: 1.4.8+dfsg-3build1
+---
+Software: linux-azure
+Version: 6.8.0-1029.34~22.04.1
+---
+Software: linux-azure-6.8-cloud-tools-6.8.0-1028
+Version: 6.8.0-1028.33~22.04.1
+---
+Software: linux-azure-6.8-cloud-tools-6.8.0-1029
+Version: 6.8.0-1029.34~22.04.1
+---
+Software: linux-azure-6.8-headers-6.8.0-1028
+Version: 6.8.0-1028.33~22.04.1
+---
+Software: linux-azure-6.8-headers-6.8.0-1029
+Version: 6.8.0-1029.34~22.04.1
+---
+Software: linux-azure-6.8-tools-6.8.0-1028
+Version: 6.8.0-1028.33~22.04.1
+---
+Software: linux-azure-6.8-tools-6.8.0-1029
+Version: 6.8.0-1029.34~22.04.1
+---
+Software: linux-base
+Version: 4.5ubuntu9+22.04.1
+---
+Software: linux-base-sgx
+Version: 4.5ubuntu9+22.04.1
+---
+Software: linux-cloud-tools-6.8.0-1028-azure
+Version: 6.8.0-1028.33~22.04.1
+---
+Software: linux-cloud-tools-6.8.0-1029-azure
+Version: 6.8.0-1029.34~22.04.1
+---
+Software: linux-cloud-tools-azure
+Version: 6.8.0-1029.34~22.04.1
+---
+Software: linux-cloud-tools-common
+Version: 5.15.0-141.151
+---
+Software: linux-headers-6.8.0-1028-azure
+Version: 6.8.0-1028.33~22.04.1
+---
+Software: linux-headers-6.8.0-1029-azure
+Version: 6.8.0-1029.34~22.04.1
+---
+Software: linux-headers-azure
+Version: 6.8.0-1029.34~22.04.1
+---
+Software: linux-image-6.8.0-1028-azure
+Version: 6.8.0-1028.33~22.04.1
+---
+Software: linux-image-6.8.0-1029-azure
+Version: 6.8.0-1029.34~22.04.1
+---
+Software: linux-image-azure
+Version: 6.8.0-1029.34~22.04.1
+---
+Software: linux-modules-6.8.0-1028-azure
+Version: 6.8.0-1028.33~22.04.1
+---
+Software: linux-modules-6.8.0-1029-azure
+Version: 6.8.0-1029.34~22.04.1
+---
+Software: linux-tools-6.8.0-1028-azure
+Version: 6.8.0-1028.33~22.04.1
+---
+Software: linux-tools-6.8.0-1029-azure
+Version: 6.8.0-1029.34~22.04.1
+---
+Software: linux-tools-azure
+Version: 6.8.0-1029.34~22.04.1
+---
+Software: linux-tools-common
+Version: 5.15.0-141.151
+---
+Software: locales
+Version: 2.35-0ubuntu3.10
+---
+Software: login
+Version: 1:4.8.1-2ubuntu2.2
+---
+Software: logrotate
+Version: 3.19.0-1ubuntu1.1
+---
+Software: logsave
+Version: 1.46.5-2ubuntu1.2
+---
+Software: lsb-base
+Version: 11.1.0ubuntu4
+---
+Software: lsb-release
+Version: 11.1.0ubuntu4
+---
+Software: lshw
+Version: 02.19.git.2021.06.19.996aaad9c7-2build1
+---
+Software: lsof
+Version: 4.93.2+dfsg-1.1build2
+---
+Software: lsscsi
+Version: 0.31-1build2
+---
+Software: lvm2
+Version: 2.03.11-2.1ubuntu5
+---
+Software: lxd-agent-loader
+Version: 0.5
+---
+Software: man-db
+Version: 2.10.2-1
+---
+Software: manpages
+Version: 5.10-1ubuntu1
+---
+Software: mawk
+Version: 1.3.4.20200120-3
+---
+Software: mdadm
+Version: 4.2-0ubuntu2
+---
+Software: media-types
+Version: 7.0.0
+---
+Software: mokutil
+Version: 0.6.0-2~22.04.2
+---
+Software: motd-news-config
+Version: 12ubuntu4.7
+---
+Software: mount
+Version: 2.37.2-4ubuntu3.4
+---
+Software: mtr-tiny
+Version: 0.95-1
+---
+Software: multipath-tools
+Version: 0.8.8-1ubuntu1.22.04.4
+---
+Software: nano
+Version: 6.2-1ubuntu0.1
+---
+Software: ncurses-base
+Version: 6.3-2ubuntu0.1
+---
+Software: ncurses-bin
+Version: 6.3-2ubuntu0.1
+---
+Software: ncurses-term
+Version: 6.3-2ubuntu0.1
+---
+Software: needrestart
+Version: 3.5-5ubuntu2.4
+---
+Software: netbase
+Version: 6.3
+---
+Software: netcat-openbsd
+Version: 1.218-4ubuntu1
+---
+Software: netplan.io
+Version: 0.106.1-7ubuntu0.22.04.4
+---
+Software: networkd-dispatcher
+Version: 2.1-2ubuntu0.22.04.2
+---
+Software: nftables
+Version: 1.0.2-1ubuntu3
+---
+Software: nodejs
+Version: 18.20.8-1nodesource1
+---
+Software: ntfs-3g
+Version: 1:2021.8.22-3ubuntu1.2
+---
+Software: nvme-cli
+Version: 1.16-3ubuntu0.3
+---
+Software: open-iscsi
+Version: 2.1.5-1ubuntu1.1
+---
+Software: open-vm-tools
+Version: 2:12.3.5-3~ubuntu0.22.04.2
+---
+Software: openssh-client
+Version: 1:8.9p1-3ubuntu0.13
+---
+Software: openssh-server
+Version: 1:8.9p1-3ubuntu0.13
+---
+Software: openssh-sftp-server
+Version: 1:8.9p1-3ubuntu0.13
+---
+Software: openssl
+Version: 3.0.2-0ubuntu1.19
+---
+Software: os-prober
+Version: 1.79ubuntu2
+---
+Software: overlayroot
+Version: 0.47ubuntu1
+---
+Software: packagekit
+Version: 1.2.5-2ubuntu3
+---
+Software: packagekit-tools
+Version: 1.2.5-2ubuntu3
+---
+Software: packages-microsoft-prod
+Version: 1.0-ubuntu22.04.1
+---
+Software: parted
+Version: 3.4-2build1
+---
+Software: passwd
+Version: 1:4.8.1-2ubuntu2.2
+---
+Software: pastebinit
+Version: 1.5.1-1ubuntu1
+---
+Software: patch
+Version: 2.7.6-7build2
+---
+Software: pci.ids
+Version: 0.0~2022.01.22-1ubuntu0.1
+---
+Software: pciutils
+Version: 1:3.7.0-6
+---
+Software: perl
+Version: 5.34.0-3ubuntu1.4
+---
+Software: perl-base
+Version: 5.34.0-3ubuntu1.4
+---
+Software: perl-modules-5.34
+Version: 5.34.0-3ubuntu1.4
+---
+Software: pinentry-curses
+Version: 1.1.1-1build2
+---
+Software: pipewire
+Version: 0.3.48-1ubuntu3
+---
+Software: pipewire-bin
+Version: 0.3.48-1ubuntu3
+---
+Software: pipewire-media-session
+Version: 0.4.1-2ubuntu1
+---
+Software: pkexec
+Version: 0.105-33
+---
+Software: plymouth
+Version: 0.9.5+git20211018-1ubuntu3
+---
+Software: plymouth-theme-ubuntu-text
+Version: 0.9.5+git20211018-1ubuntu3
+---
+Software: policykit-1
+Version: 0.105-33
+---
+Software: polkitd
+Version: 0.105-33
+---
+Software: pollinate
+Version: 4.33-3ubuntu2.1
+---
+Software: powermgmt-base
+Version: 1.36
+---
+Software: powershell
+Version: 7.5.1-1.deb
+---
+Software: procps
+Version: 2:3.3.17-6ubuntu2.1
+---
+Software: psmisc
+Version: 23.4-2build3
+---
+Software: publicsuffix
+Version: 20211207.1025-1
+---
+Software: python-apt-common
+Version: 2.4.0ubuntu4
+---
+Software: python-babel-localedata
+Version: 2.8.0+dfsg.1-7
+---
+Software: python3
+Version: 3.10.6-1~22.04.1
+---
+Software: python3-apport
+Version: 2.20.11-0ubuntu82.8
+---
+Software: python3-apt
+Version: 2.4.0ubuntu4
+---
+Software: python3-attr
+Version: 21.2.0-1
+---
+Software: python3-automat
+Version: 20.2.0-1
+---
+Software: python3-babel
+Version: 2.8.0+dfsg.1-7
+---
+Software: python3-bcrypt
+Version: 3.2.0-1build1
+---
+Software: python3-blinker
+Version: 1.4+dfsg1-0.4
+---
+Software: python3-cairo
+Version: 1.20.1-3build1
+---
+Software: python3-certifi
+Version: 2020.6.20-1
+---
+Software: python3-cffi-backend
+Version: 1.15.0-1build2
+---
+Software: python3-chardet
+Version: 4.0.0-1
+---
+Software: python3-click
+Version: 8.0.3-1
+---
+Software: python3-colorama
+Version: 0.4.4-1
+---
+Software: python3-commandnotfound
+Version: 22.04.0
+---
+Software: python3-configobj
+Version: 5.0.6-5ubuntu0.1
+---
+Software: python3-constantly
+Version: 15.1.0-2
+---
+Software: python3-cryptography
+Version: 3.4.8-1ubuntu2.2
+---
+Software: python3-dbus
+Version: 1.2.18-3build1
+---
+Software: python3-debconf
+Version: 1.5.79ubuntu1
+---
+Software: python3-debian
+Version: 0.1.43ubuntu1.1
+---
+Software: python3-distro
+Version: 1.7.0-1
+---
+Software: python3-distro-info
+Version: 1.1ubuntu0.2
+---
+Software: python3-distupgrade
+Version: 1:22.04.20
+---
+Software: python3-distutils
+Version: 3.10.8-1~22.04
+---
+Software: python3-gdbm
+Version: 3.10.8-1~22.04
+---
+Software: python3-gi
+Version: 3.42.1-0ubuntu1
+---
+Software: python3-gi-cairo
+Version: 3.42.1-0ubuntu1
+---
+Software: python3-hamcrest
+Version: 2.0.2-2
+---
+Software: python3-httplib2
+Version: 0.20.2-2
+---
+Software: python3-hyperlink
+Version: 21.0.0-3
+---
+Software: python3-idna
+Version: 3.3-1ubuntu0.1
+---
+Software: python3-importlib-metadata
+Version: 4.6.4-1
+---
+Software: python3-incremental
+Version: 21.3.0-1
+---
+Software: python3-jeepney
+Version: 0.7.1-3
+---
+Software: python3-jinja2
+Version: 3.0.3-1ubuntu0.4
+---
+Software: python3-json-pointer
+Version: 2.0-0ubuntu1
+---
+Software: python3-jsonpatch
+Version: 1.32-2
+---
+Software: python3-jsonschema
+Version: 3.2.0-0ubuntu2
+---
+Software: python3-jwt
+Version: 2.3.0-1ubuntu0.2
+---
+Software: python3-keyring
+Version: 23.5.0-1
+---
+Software: python3-launchpadlib
+Version: 1.10.16-1
+---
+Software: python3-lazr.restfulclient
+Version: 0.14.4-1
+---
+Software: python3-lazr.uri
+Version: 1.0.6-2
+---
+Software: python3-lib2to3
+Version: 3.10.8-1~22.04
+---
+Software: python3-magic
+Version: 2:0.4.24-2
+---
+Software: python3-markupsafe
+Version: 2.0.1-2build1
+---
+Software: python3-minimal
+Version: 3.10.6-1~22.04.1
+---
+Software: python3-more-itertools
+Version: 8.10.0-2
+---
+Software: python3-netifaces
+Version: 0.11.0-1build2
+---
+Software: python3-newt
+Version: 0.52.21-5ubuntu2
+---
+Software: python3-oauthlib
+Version: 3.2.0-1ubuntu0.1
+---
+Software: python3-openssl
+Version: 21.0.0-1
+---
+Software: python3-packaging
+Version: 21.3-1
+---
+Software: python3-parted
+Version: 3.11.7-1build1
+---
+Software: python3-pexpect
+Version: 4.8.0-2ubuntu1
+---
+Software: python3-pkg-resources
+Version: 59.6.0-1.2ubuntu0.22.04.3
+---
+Software: python3-problem-report
+Version: 2.20.11-0ubuntu82.8
+---
+Software: python3-ptyprocess
+Version: 0.7.0-3
+---
+Software: python3-pyasn1
+Version: 0.4.8-1
+---
+Software: python3-pyasn1-modules
+Version: 0.2.1-1
+---
+Software: python3-pyparsing
+Version: 2.4.7-1
+---
+Software: python3-pyrsistent
+Version: 0.18.1-1build1
+---
+Software: python3-requests
+Version: 2.25.1+dfsg-2ubuntu0.1
+---
+Software: python3-secretstorage
+Version: 3.3.1-1
+---
+Software: python3-serial
+Version: 3.5-1
+---
+Software: python3-service-identity
+Version: 18.1.0-6
+---
+Software: python3-setuptools
+Version: 59.6.0-1.2ubuntu0.22.04.3
+---
+Software: python3-six
+Version: 1.16.0-3ubuntu1
+---
+Software: python3-software-properties
+Version: 0.99.22.9
+---
+Software: python3-systemd
+Version: 234-3ubuntu2
+---
+Software: python3-twisted
+Version: 22.1.0-2ubuntu2.6
+---
+Software: python3-tz
+Version: 2022.1-1ubuntu0.22.04.1
+---
+Software: python3-update-manager
+Version: 1:22.04.21
+---
+Software: python3-urllib3
+Version: 1.26.5-1~exp1ubuntu0.2
+---
+Software: python3-wadllib
+Version: 1.3.6-1
+---
+Software: python3-yaml
+Version: 5.4.1-1ubuntu1
+---
+Software: python3-zipp
+Version: 1.0.0-3ubuntu0.1
+---
+Software: python3-zope.interface
+Version: 5.4.0-1build1
+---
+Software: python3.10
+Version: 3.10.12-1~22.04.9
+---
+Software: python3.10-minimal
+Version: 3.10.12-1~22.04.9
+---
+Software: readline-common
+Version: 8.1.2-1
+---
+Software: rsync
+Version: 3.2.7-0ubuntu0.22.04.4
+---
+Software: rsyslog
+Version: 8.2112.0-2ubuntu2.2
+---
+Software: rtkit
+Version: 0.13-4build2
+---
+Software: run-one
+Version: 1.17-0ubuntu1
+---
+Software: sbsigntool
+Version: 0.9.4-2ubuntu2
+---
+Software: screen
+Version: 4.9.0-1
+---
+Software: secureboot-db
+Version: 1.8
+---
+Software: sed
+Version: 4.8-1ubuntu2
+---
+Software: sensible-utils
+Version: 0.0.17
+---
+Software: session-migration
+Version: 0.3.6
+---
+Software: sg3-utils
+Version: 1.46-1ubuntu0.22.04.1
+---
+Software: sg3-utils-udev
+Version: 1.46-1ubuntu0.22.04.1
+---
+Software: sgml-base
+Version: 1.30
+---
+Software: sgml-data
+Version: 2.0.11+nmu1
+---
+Software: shared-mime-info
+Version: 2.1-2
+---
+Software: shim-signed
+Version: 1.51.4+15.8-0ubuntu1
+---
+Software: snapd
+Version: 2.67.1+22.04
+---
+Software: software-properties-common
+Version: 0.99.22.9
+---
+Software: sosreport
+Version: 4.8.2-0ubuntu0~22.04.1
+---
+Software: sound-theme-freedesktop
+Version: 0.8-2ubuntu1
+---
+Software: squashfs-tools
+Version: 1:4.5-3build1
+---
+Software: ssh-import-id
+Version: 5.11-0ubuntu1
+---
+Software: strace
+Version: 5.16-0ubuntu3
+---
+Software: sudo
+Version: 1.9.9-1ubuntu2.4
+---
+Software: sysstat
+Version: 12.5.2-2ubuntu0.2
+---
+Software: systemd
+Version: 249.11-0ubuntu3.16
+---
+Software: systemd-hwe-hwdb
+Version: 249.11.5
+---
+Software: systemd-sysv
+Version: 249.11-0ubuntu3.16
+---
+Software: sysvinit-utils
+Version: 3.01-1ubuntu1
+---
+Software: tar
+Version: 1.34+dfsg-1ubuntu0.1.22.04.2
+---
+Software: tcl
+Version: 8.6.11+1build2
+---
+Software: tcl8.6
+Version: 8.6.12+dfsg-1build1
+---
+Software: tcpdump
+Version: 4.99.1-3ubuntu0.2
+---
+Software: telnet
+Version: 0.17-44build1
+---
+Software: thin-provisioning-tools
+Version: 0.9.0-2ubuntu1
+---
+Software: time
+Version: 1.9-0.1build2
+---
+Software: tmux
+Version: 3.2a-4ubuntu0.2
+---
+Software: tnftp
+Version: 20210827-4build1
+---
+Software: tpm-udev
+Version: 0.6
+---
+Software: tree
+Version: 2.0.2-1
+---
+Software: tzdata
+Version: 2025b-0ubuntu0.22.04.1
+---
+Software: ubuntu-advantage-pro
+Version: 35.1ubuntu0~22.04
+---
+Software: ubuntu-advantage-tools
+Version: 35.1ubuntu0~22.04
+---
+Software: ubuntu-keyring
+Version: 2021.03.26
+---
+Software: ubuntu-minimal
+Version: 1.481.4
+---
+Software: ubuntu-mono
+Version: 20.10-0ubuntu2
+---
+Software: ubuntu-pro-auto-attach
+Version: 35.1ubuntu0~22.04
+---
+Software: ubuntu-pro-client
+Version: 35.1ubuntu0~22.04
+---
+Software: ubuntu-pro-client-l10n
+Version: 35.1ubuntu0~22.04
+---
+Software: ubuntu-release-upgrader-core
+Version: 1:22.04.20
+---
+Software: ubuntu-server
+Version: 1.481.4
+---
+Software: ubuntu-standard
+Version: 1.481.4
+---
+Software: ucf
+Version: 3.0043
+---
+Software: udev
+Version: 249.11-0ubuntu3.16
+---
+Software: ufw
+Version: 0.36.1-4ubuntu0.1
+---
+Software: unattended-upgrades
+Version: 2.8ubuntu1
+---
+Software: unzip
+Version: 6.0-26ubuntu3.2
+---
+Software: update-manager-core
+Version: 1:22.04.21
+---
+Software: update-notifier-common
+Version: 3.192.54.8
+---
+Software: usb-modeswitch
+Version: 2.6.1-3ubuntu2
+---
+Software: usb-modeswitch-data
+Version: 20191128-4
+---
+Software: usb.ids
+Version: 2022.04.02-1
+---
+Software: usbutils
+Version: 1:014-1build1
+---
+Software: usrmerge
+Version: 25ubuntu2
+---
+Software: util-linux
+Version: 2.37.2-4ubuntu3.4
+---
+Software: uuid-runtime
+Version: 2.37.2-4ubuntu3.4
+---
+Software: vim
+Version: 2:8.2.3995-1ubuntu2.24
+---
+Software: vim-common
+Version: 2:8.2.3995-1ubuntu2.24
+---
+Software: vim-runtime
+Version: 2:8.2.3995-1ubuntu2.24
+---
+Software: vim-tiny
+Version: 2:8.2.3995-1ubuntu2.24
+---
+Software: walinuxagent
+Version: 2.2.46-0ubuntu5.1
+---
+Software: wget
+Version: 1.21.2-2ubuntu1.1
+---
+Software: whiptail
+Version: 0.52.21-5ubuntu2
+---
+Software: x11-common
+Version: 1:7.7+23ubuntu2
+---
+Software: xauth
+Version: 1:1.1-1build2
+---
+Software: xdg-dbus-proxy
+Version: 0.1.3-1
+---
+Software: xdg-desktop-portal
+Version: 1.14.4-1ubuntu2~22.04.2
+---
+Software: xdg-desktop-portal-gtk
+Version: 1.14.0-1build1
+---
+Software: xdg-user-dirs
+Version: 0.17-2ubuntu4
+---
+Software: xfsprogs
+Version: 5.13.0-1ubuntu2.1
+---
+Software: xkb-data
+Version: 2.33-1
+---
+Software: xml-core
+Version: 0.18+nmu1
+---
+Software: xxd
+Version: 2:8.2.3995-1ubuntu2.24
+---
+Software: xz-utils
+Version: 5.2.5-2ubuntu1
+---
+Software: yelp
+Version: 42.1-1ubuntu0.1
+---
+Software: yelp-xsl
+Version: 42.0-1ubuntu0.1
+---
+Software: zenity
+Version: 3.42.1-0ubuntu1
+---
+Software: zenity-common
+Version: 3.42.1-0ubuntu1
+---
+Software: zerofree
+Version: 1.1.1-1build3
+---
+Software: zip
+Version: 3.0-12build2
+---
+Software: zlib1g
+Version: 1:1.2.11.dfsg-2ubuntu9.2
+---
+Software: zstd
+Version: 1.4.8+dfsg-3build1
+---

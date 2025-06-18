@@ -1,0 +1,40 @@
+# =============================
+# CIS Section 3.1 - Configure Network Devices
+# =============================
+
+---
+CIS Section: 3.1.1 – Ensure IPv6 status is identified
+
+Rationale: IPv6 should be enabled and configured unless prohibited by local policy.
+
+Current State:
+ - IPv6 is enabled
+
+Best Practice / Expected Value:
+IPv6 should be enabled and configured properly.
+
+Audit Result: **PASS**
+
+---
+CIS Section: 3.1.2 – Ensure wireless interfaces are disabled
+
+Rationale: If wireless is not used, interfaces should be disabled to reduce attack surface.
+
+Audit Result: **PASS**
+
+ - System has no wireless NICs installed
+
+---
+CIS Section: 3.1.3 – Ensure bluetooth services are not in use
+
+Rationale: Bluetooth introduces attack vectors like bluesnarfing, malware infections, etc.
+
+Current State:
+bluez is NOT installed
+
+Best Practice / Expected Value:
+The bluez package should be removed.
+
+Audit Result: **PASS**
+
+Audit complete. Results written to: /home/azureuser/SEND_TO_MAOR2/configure_network_devices.txt

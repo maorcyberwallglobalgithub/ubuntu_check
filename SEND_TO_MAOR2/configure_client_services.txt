@@ -1,0 +1,87 @@
+# =============================
+# CIS Section 2.2 - Client Services - Audit
+# =============================
+
+---
+CIS Section: 2.2.1 – Ensure nis is not installed
+
+Rationale:
+NIS is insecure and deprecated. It should be removed.
+
+Current State:
+The package 'nis' is NOT installed.
+
+Best Practice / Expected Value:
+The package 'nis' should NOT be installed.
+
+Audit Result: **PASS**
+
+---
+CIS Section: 2.2.2 – Ensure rsh-client is not installed
+
+Rationale:
+rsh is obsolete and insecure. Use SSH instead.
+
+Current State:
+The package 'rsh-client' is NOT installed.
+
+Best Practice / Expected Value:
+The package 'rsh-client' should NOT be installed.
+
+Audit Result: **PASS**
+
+---
+CIS Section: 2.2.3 – Ensure talk is not installed
+
+Rationale:
+talk transmits unencrypted messages and should be removed.
+
+Current State:
+The package 'talk' is NOT installed.
+
+Best Practice / Expected Value:
+The package 'talk' should NOT be installed.
+
+Audit Result: **PASS**
+
+---
+CIS Section: 2.2.4 – Ensure telnet is not installed
+
+Rationale:
+Telnet transmits credentials in clear text. Use SSH instead.
+
+Current State:
+The package 'telnet' is INSTALLED.
+
+Best Practice / Expected Value:
+The package 'telnet' should NOT be installed.
+
+Audit Result: **FAIL**
+
+---
+CIS Section: 2.2.5 – Ensure ldap-utils is not installed
+
+Rationale:
+Should be removed unless explicitly needed.
+
+Current State:
+The package 'ldap-utils' is NOT installed.
+
+Best Practice / Expected Value:
+The package 'ldap-utils' should NOT be installed.
+
+Audit Result: **PASS**
+
+---
+CIS Section: 2.2.6 – Ensure ftp is not installed
+
+Rationale:
+FTP is insecure. Use SFTP or SCP instead.
+
+Current State:
+The package 'ftp' is INSTALLED.
+
+Best Practice / Expected Value:
+The package 'ftp' should NOT be installed.
+
+Audit Result: **FAIL**

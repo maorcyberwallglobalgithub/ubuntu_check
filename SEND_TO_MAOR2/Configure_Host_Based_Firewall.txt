@@ -1,0 +1,75 @@
+# =============================
+# CIS Section 4.1 – Configure UncomplicatedFirewall (UFW)
+# =============================
+
+---
+CIS Section: 4.1.1 – Ensure ufw is installed
+Audit Command: dpkg-query -s ufw &>/dev/null && echo 'ufw is installed'
+Current Value: ufw is installed
+Best Practice Value: ufw should be installed
+Audit Result: **PASS**
+Recommendation: No action needed.
+
+---
+CIS Section: 4.1.2 – Ensure iptables-persistent is not installed with ufw
+Audit Command: dpkg-query -s iptables-persistent &>/dev/null && echo 'iptables-persistent is installed'
+Current Value: iptables-persistent is NOT installed
+Best Practice Value: iptables-persistent should NOT be installed with ufw
+Audit Result: **PASS**
+Recommendation: No action needed.
+
+---
+CIS Section: 4.1.3 – Ensure ufw service is enabled
+Audit Commands:
+  systemctl is-enabled ufw
+  systemctl is-active ufw
+  ufw status
+Current Value: ufw is not fully enabled or active
+Best Practice Value: ufw service should be enabled and active
+Audit Result: **FAIL**
+Recommendation: Run the following commands:
+  systemctl unmask ufw.service
+  systemctl --now enable ufw.service
+  ufw enable
+
+---
+CIS Section: 4.1.4 – Ensure ufw loopback traffic is configured
+Audit Command: ufw status verbose
+Current Value: loopback traffic rules are missing
+Best Practice Value: Loopback interface must accept traffic, and other interfaces must deny 127.0.0.0/8 and ::1
+Audit Result: **FAIL**
+Recommendation: Run the following commands:
+  ufw allow in on lo
+  ufw allow out on lo
+  ufw deny in from 127.0.0.0/8
+  ufw deny in from ::1
+
+---
+CIS Section: 4.1.5 – Ensure ufw outbound connections are configured (Manual)
+Audit Command: ufw status numbered
+Current Value:
+Best Practice Value: Outbound rules should be configured per site policy
+Audit Result: **MANUAL**
+Recommendation: Review the output and configure outbound rules per policy using 'ufw allow out'
+
+---
+CIS Section: 4.1.6 – Ensure ufw firewall rules exist for all open ports
+Audit Commands: ufw status verbose + ss -tuln
+Audit Result: **FAIL**
+The following port(s) do not have UFW rules:
+22
+68
+Recommendation: Add rules using 'ufw allow in <port>/<tcp|udp>' or 'ufw deny in ...'
+
+---
+CIS Section: 4.1.7 – Ensure ufw default deny firewall policy
+Audit Command: ufw status verbose | grep Default:
+Current Value: 
+Best Practice Value: Default policy should be deny incoming, deny outgoing, deny routed
+Audit Result: **FAIL**
+Recommendation: Run:
+  ufw default deny incoming
+  ufw default deny outgoing
+  ufw default deny routed
+
+Audit complete. Output saved to /home/azureuser/SEND_TO_MAOR2/Configure_Host_Based_Firewall.txt

@@ -1,0 +1,120 @@
+
+---
+CIS Section: 1.7.1 – Ensure GDM is removed
+---
+
+Rationale:
+Remove GDM if GUI is not required, to reduce the attack surface.
+
+Current State: gdm3 is not installed
+
+Audit Result: **PASS** – gdm3 is not installed
+
+
+---
+CIS Section: 1.7.9 – Ensure enable is properly configured
+---
+
+Current State: enable not found in /etc/dconf/db/
+
+Audit Result: **FAIL** – enable is not configured
+
+Rationale:
+This setting controls GDM behavior related to security and login restrictions.
+
+
+---
+CIS Section: 1.7.8 – Ensure automatic-login is properly configured
+---
+
+Current State: automatic-login not found in /etc/dconf/db/
+
+Audit Result: **FAIL** – automatic-login is not configured
+
+Rationale:
+This setting controls GDM behavior related to security and login restrictions.
+
+
+---
+CIS Section: 1.7.5 – Ensure disable-automatic-login is properly configured
+---
+
+Current State: disable-automatic-login not found in /etc/dconf/db/
+
+Audit Result: **FAIL** – disable-automatic-login is not configured
+
+Rationale:
+This setting controls GDM behavior related to security and login restrictions.
+
+
+---
+CIS Section: 1.7.4 – Ensure banner-message-text is properly configured
+---
+
+Current State: banner-message-text not found in /etc/dconf/db/
+
+Audit Result: **FAIL** – banner-message-text is not configured
+
+Rationale:
+This setting controls GDM behavior related to security and login restrictions.
+
+
+---
+CIS Section: 1.7.7 – Ensure automatic-login-enable is properly configured
+---
+
+Current State: automatic-login-enable not found in /etc/dconf/db/
+
+Audit Result: **FAIL** – automatic-login-enable is not configured
+
+Rationale:
+This setting controls GDM behavior related to security and login restrictions.
+
+
+---
+CIS Section: 1.7.6 – Ensure disable-guest-login is properly configured
+---
+
+Current State: disable-guest-login not found in /etc/dconf/db/
+
+Audit Result: **FAIL** – disable-guest-login is not configured
+
+Rationale:
+This setting controls GDM behavior related to security and login restrictions.
+
+
+---
+CIS Section: 1.7.3 – Ensure banner-message-enable is properly configured
+---
+
+Current State: banner-message-enable not found in /etc/dconf/db/
+
+Audit Result: **FAIL** – banner-message-enable is not configured
+
+Rationale:
+This setting controls GDM behavior related to security and login restrictions.
+
+
+---
+CIS Section: 1.7.2 – Ensure disable-user-list is properly configured
+---
+
+Current State: disable-user-list not found in /etc/dconf/db/
+
+Audit Result: **FAIL** – disable-user-list is not configured
+
+Rationale:
+This setting controls GDM behavior related to security and login restrictions.
+
+
+---
+CIS Section: 1.7.10 – Ensure XDMCP is not enabled
+---
+
+Rationale:
+XDMCP is an insecure protocol that may expose sensitive data like user credentials.
+
+Current State: No XDMCP configuration block found
+
+Audit Result: **PASS** – XDMCP is not enabled
+
